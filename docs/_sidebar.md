@@ -3,7 +3,7 @@
 - **Getting started**
 
 * [Home](/)
-* [Methods](methods.md)
+* [Tips](tips.md)
 
 - **Functions**
 
