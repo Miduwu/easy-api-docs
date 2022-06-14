@@ -29,8 +29,10 @@ $condition[2<3&&3==3] // Returns: true
 ```js
 == // Equal
 != // Different
->= // Lower
-<= // Higher
+> // Higher
+< // Lower
+>= // Higher or equal
+<= // Lower or equal
 && // And
 || // Or
 ```
