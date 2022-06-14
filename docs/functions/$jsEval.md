@@ -2,14 +2,19 @@
 Evaluate a javascript code.
 
 ### Parameters:
-| Name      | Type                | Description                        |
-| --------- | ------------------- | ---------------------------------- |
-| return| Boolean              | Choose to return the code or not.
-
-| code | String              | The js code you are going to evaluate.
+| Name      | Type                | Description                            |
+| --------- | ------------------- | -------------------------------------- |
+| return    | Boolean             | Choose to return the code or not.      |
+| code      | String              | The js code you are going to evaluate. |
 
 ### Example:
 ```js
-$jsEval[yes;console.log("hello world")] // return: Hello world
-$jsEval[no;console.log("hello world")] // return: 
+$jsEval[true;
+const hi = "Hello world"
+hi
+] // return: Hello world
+$jsEval[false;
+const hi = "Hello world"
+hi
+] // return: 
 ```
