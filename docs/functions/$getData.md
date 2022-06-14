@@ -12,13 +12,17 @@ $getData[data.something]
 $request[...] // required to use this function
 
 // Example code:
-$send[$getData[data.translated]] // returns: Salut monde 
+$send[$getData[data.translated]] // returns: Bonjour le monde
 $request[https://api.miduwu.ga/json/translate?source=auto&target=fr&text=Hello+world]
 ```
 
-__ __
+<br/>
 
-__The link returns:__
+__ __
+<br/>
+<br/>
+
+  The link returned a json
 ```json
 {
  "status": 200,
@@ -30,10 +34,7 @@ __The link returns:__
  "success": true
 }
 ```
-
-__ __
-
-So you have to choose an object and then the value, for example: 
+  So you have to choose an object and then the value, for example: 
 ```js
 data.source // returns: en
 status // returns: 200
