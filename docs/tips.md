@@ -2,6 +2,23 @@
 
 Useful tips to improve your coding experience.
 
+## Handler
+
+Load the routes with a handler.
+
+> 💡: You can use `$reload` function to reload the routes path.
+
+**Example:**
+```js
+import { API } from "easy-api.ts";
+
+const api = new API({...})
+
+api.routes.load('./routes')
+
+...
+```
+
 ## Adding your own function
 
 Add your own function using the `<API>.interpreter` class.
@@ -23,23 +40,6 @@ api.interpreter.addFunction({
         }
     }
 })
-
-...
-```
-
-## Handler
-
-Load the routes with a handler.
-
-> 💡: You can use `$reload` function to reload the routes path.
-
-**Example:**
-```js
-import { API } from "easy-api.ts";
-
-const api = new API({...})
-
-api.load('./path/to/file.js')
 
 ...
 ```
