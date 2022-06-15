@@ -1,6 +1,8 @@
 # EASY-API.TS
 Make your own API with ease.
 
+![image](https://i.imgur.com/xqy1Ta2.png)
+
 ## Easy setup
 
 ```js
