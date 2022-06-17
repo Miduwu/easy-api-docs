@@ -4,6 +4,7 @@
 
 * [Home](/)
 * [Tips](tips.md)
+* [Escapers](escapers.md)
 
 - **Functions**
 
