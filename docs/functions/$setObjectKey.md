@@ -2,10 +2,10 @@
 Set a key value to the created object.
 
 ### Parameters:
-| Name      | Type                | Description                        |
-| --------- | ------------------- | ---------------------------------- |
-| name | String              | The property name. |
-| value | Any              | The value of this property. |
+| Name | Type | Description | Optional |
+| ---- | ---- | ----------- | -------- |
+| name | String | The property name. | false | 
+| value | Any | The value of this property. | false |
 
 ### Example:
 ```js
