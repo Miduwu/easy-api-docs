@@ -2,9 +2,9 @@
 Convert a string to lowercase.
 
 ### Parameters:
-| Name | Type | Description |
-| ---- | ---- | ------------|
-| text | String | The text to convert to lowercase|
+| Name | Type | Description | Optional |
+| ---- | ---- | ----------- | -------- | 
+| text | String | The text to convert to lowercase| false |
 
 ### Example:
 
