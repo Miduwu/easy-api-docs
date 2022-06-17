@@ -4,9 +4,9 @@ or 'false' if the condition is false
 
 
 ### Parameters:
-| Name | Type | Description |
-| ---- | ---- | ------------|
-| condition | String | The condition to check|
+| Name | Type | Description | Optional |
+| ---- | ---- | ------------| --------- |
+| condition | String | The condition to check| false |
 
 ### Example:
 
