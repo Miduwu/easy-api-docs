@@ -2,9 +2,9 @@
 Get the value of a property.
 
 ### Parameters:
-| Name      | Type                | Description                            |
-| --------- | ------------------- | -------------------------------------- |
-| name      | String              | The name of the value you want to get. |
+| Name      | Type                | Description                            | Optional |
+| --------- | ------------------- | -------------------------------------- | -------- |
+| name      | String              | The name of the value you want to get. | false    |
 
 ### Example:
 ```js
