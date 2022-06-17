@@ -2,10 +2,10 @@
 Evaluate a javascript code.
 
 ### Parameters:
-| Name      | Type                | Description                            |
-| --------- | ------------------- | -------------------------------------- |
-| return    | Boolean             | Choose to return the code or not.      |
-| code      | String              | The js code you are going to evaluate. |
+| Name      | Type                | Description                            | Optional |
+| --------- | ------------------- | -------------------------------------- | -------- |
+| return    | Boolean             | Choose to return the code or not.      | false    |
+| code      | String              | The js code you are going to evaluate. | false    |
 
 ### Example:
 ```js
