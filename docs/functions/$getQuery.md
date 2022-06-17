@@ -2,9 +2,9 @@
 Get a query parameter value.
 
 ### Parameters:
-| Name        | Type        | Description |
-| ----------- | ----------- | ----------- |
-| name        | String      | The parameter name. |
+| Name        | Type        | Description | Optional |
+| ----------- | ----------- | ----------- | -------- |
+| name        | String      | The parameter name. | false |
 
 ### Example:
 ```js
