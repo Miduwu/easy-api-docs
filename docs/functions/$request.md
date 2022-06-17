@@ -13,4 +13,4 @@
 // now you can use $getData[property] to get the results.
 $request[https://api.miduwu.ga/json/translate?source=auto&target=fr&text=Hello+world]
 ```
-> 💡: You can use [**`$getData`**](/docs/functions/$getData.md) function to get the data from this request.
+> 💡: You can use [**`$getData`**](/functions/$getData.md) function to get the data from this request.
