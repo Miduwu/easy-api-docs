@@ -6,8 +6,6 @@ Useful tips to improve your coding experience.
 
 Load the routes with a handler.
 
-> 💡: You can use `$reload` function to reload the routes path.
-
 **Example:**
 ```js
 import { API } from "easy-api.ts";
