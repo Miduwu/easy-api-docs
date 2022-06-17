@@ -2,9 +2,9 @@
 Get a property value from the json request object (if any).
 
 ### Parameters:
-| Name      | Type                | Description                        |
-| --------- | ------------------- | ---------------------------------- |
-| property | property              | The property from the object to get the value. |
+| Name      | Type                | Description                        | Optional |
+| --------- | ------------------- | ---------------------------------- | -------- |
+| property | property              | The property from the object to get the value. | false |
 
 ### Example:
 ```js
