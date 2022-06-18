@@ -5,7 +5,7 @@ Loads an image and save id as an ID.
 | Name          | Type        | Description                           | Optional |
 | ------------- | ----------- | ------------------------------------- | -------- |
 | id            | String      | The image ID.                         | false    |
-| type          | String      | Type (path | link)                    | false    |
+| type          | String      | Type (path \| link)                    | false    |
 | body          | String      | The image URL or path depending type. | false    |
 
 ### Example:
