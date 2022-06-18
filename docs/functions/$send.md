@@ -5,7 +5,7 @@ Send something to the http response.
 | Name          | Type               | Description                                                     | Optional |
 | ------------- | ------------------ | --------------------------------------------------------------- | -------- |
 | status        | Number             | The http response status. Ex: 200.                              | false    |
-| type          | String             | The response type (json|safe|canvas)                            | false    |
+| type          | String             | The response type (json\|safe\|canvas)                          | false    |
 | body          | Object \| $default | The body (JSON for this type, $default for 'safe' and 'canvas') | false    |
 
 ### Example:
