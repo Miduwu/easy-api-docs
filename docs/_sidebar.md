@@ -12,6 +12,7 @@
 * [$condition](functions/$condition.md)
 * [$createObject](functions/$createObject.md)
 * [$deleteObjectKey](functions/$deleteObjectKey.md)
+* [$escape](functions/$escape.md)
 * [$fixed](functions/$fixed.md)
 * [$get](functions/$get)
 * [$getData](functions/$getData.md)
