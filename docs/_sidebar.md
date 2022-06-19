@@ -10,8 +10,10 @@
 
 * [$break](functions/$break)
 * [$condition](functions/$condition.md)
+* [$createCanvas](functions/$createCanvas.md)
 * [$createObject](functions/$createObject.md)
 * [$deleteObjectKey](functions/$deleteObjectKey.md)
+* [$drawImage](functions/$drawImage.md)
 * [$escape](functions/$escape.md)
 * [$fixed](functions/$fixed.md)
 * [$get](functions/$get)
@@ -28,6 +30,7 @@
 * [$loadImage](functions/$loadImage.md)
 * [$log](functions/$log.md)
 * [$lowercase](functions/$lowercase.md)
+* [$opacity](functions/$opacity.md)
 * [$protocol](functions/$protocol.md)
 * [$replaceRegexp](functions/$replaceRegexp)
 * [$replaceText](functions/$replaceText.md)
@@ -35,5 +38,7 @@
 * [$send](functions/$send.md)
 * [$setObjectKey](functions/$setObjectKey.md)
 * [$split](functions/$split.md)
+* [$trim](functions/$trim.md)
 * [$uppercase](functions/$uppercase.md)
 * [$var](functions/$var.md)
+
