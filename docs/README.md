@@ -1,7 +1,7 @@
 # EASY-API.TS
 Make your own API with ease.
 
-![image](https://i.imgur.com/xqy1Ta2.png)
+![image](https://i.imgur.com/upR5GuS.png)
 
 ## Easy setup
 
@@ -28,3 +28,11 @@ api.routes.add({
 
 api.connect()
 ```
+
+## You must know...
+- You need node **>=14**
+- The code start reading from bottom to the top.
+- This is a wrapper of express extended with custom functions like canvas.
+- This can contain some bugs (report it).
+- This is package can be used in JavaScript (use const instead import) and TypeScript
+- We'd like you to join our support server.
