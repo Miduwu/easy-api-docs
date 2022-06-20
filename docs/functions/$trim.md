@@ -9,6 +9,6 @@ Trims a text (remove unnecesary spaces [extras]).
 ### Example:
 
 ```js
-$trim[Hello   world hehe   xd] // Hello world hehe xd
+$trim[   Hello world hehe xd   ] // Hello world hehe xd
 
 ```
