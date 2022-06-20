@@ -14,7 +14,7 @@ const api = new API({...})
 
 api.routes.load('./routes')
 
-...
+api.connect()
 ```
 
 ## Adding your own function
@@ -25,7 +25,7 @@ Add your own function using the `<API>.interpreter` class.
 ```js
 import { API, FunctionBuilder, Utils } from "easy-api.ts";
 
-const API = new API({...})
+const api = new API({...})
 
 api.interpreter.addFunction({
     data: new FunctionBuilder()
@@ -39,5 +39,5 @@ api.interpreter.addFunction({
     }
 })
 
-...
+api.connect()
 ```
