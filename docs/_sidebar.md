@@ -9,6 +9,7 @@
 - **Functions**
 
 * [$break](functions/$break)
+* $color
 * [$condition](functions/$condition.md)
 * [$createCanvas](functions/$createCanvas.md)
 * [$createObject](functions/$createObject.md)
