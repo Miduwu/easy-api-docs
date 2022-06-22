@@ -13,7 +13,7 @@ Register a custom font from a path.
 
 ```js
 $drawText[...]
-$font[30px;Any name] // Now we can use it
+$font[30;Any name] // Now we can use it
 $createCanvas[512;512]
 $registerFont[./assets/myfont.ttf;Any name] // We register it with a custon name
 ```
