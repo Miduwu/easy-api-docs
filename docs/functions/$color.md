@@ -8,7 +8,5 @@ Set the canvas context color.
 
 ### Example:
 ```js
-$color[hexadecimal code]
-
 $color[#303132] // The color context will be gray.
 ```
