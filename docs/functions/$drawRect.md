@@ -12,11 +12,8 @@ Draws a rectangle in a canvas.
 
 ### Example:
 
-\`\`\`js
-
-$drawRect[x;y;width;height;radius?]
-
-// Example with the options:
-$drawRect[0;0;512;512] // Draws the rectangle 
+```js
+$drawRect[0;0;512;512] // Draws the rectangle with color
+$color[#040E20]
 $createCanvas[512;512] // required to use this function
-\`\`\`
+```
