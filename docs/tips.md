@@ -6,7 +6,7 @@ Useful tips to improve your coding experience.
 
 Load the routes with a handler.
 
-**Example:**
+**Example (Setup):**
 ```js
 import { API } from "easy-api.ts";
 
@@ -15,6 +15,23 @@ const api = new API({...})
 api.routes.load('./routes')
 
 api.connect()
+```
+
+**Example (route):**
+```js
+// path: './routes/../../../route.js'
+module.exports = {
+    path: '/endpoint/name',
+    details: {
+        description: 'Anything',
+        more_X_keys: 'anything'
+    },
+    code: `
+    $send[200;json;{
+        success: true
+    }]
+    `
+}
 ```
 
 ## Adding your own function
