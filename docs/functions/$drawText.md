@@ -1,26 +1,22 @@
 # $drawText
-Draws a rectangle in a canvas.
+Draws a text box in the canvas.
 
 ### Parameters:
-| Name     | Type      | Description            | Optional |
-| -------- | --------- | ---------------------- | -------- |
-| x        | Number    | X rectangle position.      | false    |
-| y        | Number    | Y rectangle position.      | false    |
-| width    | Number    | Rectangle width.           | false    |
-| height   | Number    | Rectangle height.          | false    |
-| radius   | Number    | An optional circle radius. | true     |
+| Name     | Type      | Description                                | Optional |
+| -------- | --------- | ------------------------------------------ | -------- |
+| x        | Number    | X text  position.                          | false    |
+| y        | Number    | Y text  position.                          | false    |
+| width    | Number    | Text width.                                | false    |
+| height   | Number    | Text height.                               | false    |
+| align    | String    | Text align (right\|left\|center).          | true     |
+| vAlign   | String    | Text vertical align (top\|bottom\|middle). | true     |
 
 ### Example:
 
 ```js
-
-$drawRect[x;y;width;height;radius?]
-
-// Example with the options:
-$drawRect[0;0;512;512] // Draws the rectangle 
+$drawText[Hello this is a text;20;20;450;400] // This will draw that text.
 $createCanvas[512;512] // required to use this function
 ```
 
-<br/>
-
+**Explanation:**
 ![image](https://i.imgur.com/qV2x2zV.jpg)
