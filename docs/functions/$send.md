@@ -5,7 +5,7 @@ Send something to the http response.
 | Name          | Type               | Description                                                     | Optional |
 | ------------- | ------------------ | --------------------------------------------------------------- | -------- |
 | status        | Number             | The http response status. Ex: 200.                              | false    |
-| type          | String             | The response type (json\|safe\|canvas)                          | false    |
+| type          | String             | The response type (json\|safe\|canvas\|file\|other).            | false    |
 | body          | Object \| $default | The body (JSON for this type, $default for 'safe' and 'canvas') | false    |
 
 ### Example:
@@ -24,4 +24,13 @@ $createObject
 $send[200;canvas;$default]
 // more canvas things here...
 $createCanvas
+
+// for files (json, html, etc...)
+$send[200;file;./location/file.ext]
+
+// for other things (texts, html, etc...)
+$send[200;other;
+<h1>Test</h1>
+<p>This is a cool HTML test</p>
+]
 ```
