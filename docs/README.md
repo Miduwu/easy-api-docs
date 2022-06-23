@@ -6,27 +6,34 @@ Make your own API with ease.
 ## Easy setup
 
 ```js
-import { API } from "easy-api.ts";
+import { API } from "easy-api.ts"; // use 'const { API } = require("easy-api.ts")' for JavaScript
 
 const api = new API({
-    port: 3000
+    port: process.env.PORT || 3000
 })
 
 api.routes.add({
-    path: '/owoify',
-    details: { description: 'Owoify your text.' },
+    path: '/color',
     code: `
-    $ignore[check documentation for more details about every function]
-    $send[200;json;{
-        "data": "$replaceText[$replaceText[$getQuery[text];r;w];l;w]"
+    $ignore[Check docs to see how does functions work]
+    $send[200;canvas;$default]
+    $drawRect[0;0;512;512]
+    $color[$getQuery[hex]]
+    $createCanvas[512;512]
+    $if[$isValidHex[$getQuery[hex]]==false;400;{
+        error: "Invalid hex code provided."
     }]
-    $if[$getQuery[text]==;400;json;{
-        "error": "Missing query parameter 'text'"
+    $if[$getQuery[hex]==undefined;400;{
+        error: "Missing 'hex' parameter."
     }]
     `
 })
 
-api.connect()
+// Lets load the handler...
+api.routes.load('./routes').then(() => {
+    console.log('Source loaded.')
+    api.connect() // We're connecting to the API when the source is loaded.
+})
 ```
 
 ## You must know...
