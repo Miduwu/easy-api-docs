@@ -12,9 +12,9 @@ import { API } from "easy-api.ts";
 
 const api = new API({...})
 
-api.routes.load('./routes')
-
-api.connect()
+api.routes.load('./routes').then(() => {
+    api.connect() // We're starting the API when the source is ready.
+})
 ```
 
 **Example (route):**
@@ -33,6 +33,34 @@ module.exports = {
     `
 }
 ```
+
+## Using database
+
+Save, get and delete variables from the database.
+
+**Example (Setup):**
+```js
+import { API } from "easy-api.ts";
+
+const api = new API({
+    port: process.env.PORT || 3000,
+    database: {
+        enabled: true, // VERY IMPORTANT TO ENABLE IT!!
+        type: 'replit', // You can use: 'replit' | 'default' | 'mongo'
+        // mongoUrl: '...'
+    }
+})
+
+api.connect()
+```
+
+**Functions:**
+
+`$deleteVar[var name]` [docs here.](functions/$deleteVar.md)
+
+`$getVar[var name]` [docs here.](functions/$getVar.md)
+
+`$setVar[var name;value]` [docs here.](functions/$setVar.md)
 
 ## Adding your own function
 
