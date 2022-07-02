@@ -28,6 +28,7 @@
 * [$getHeader](functions/$getHeader.md)
 * [$getObjectKey](functions/$getObjectKey.md)
 * [$getQuery](functions/$getQuery.md)
+* [$getRoute](functions/$getRoute.md)
 * [$getSplit](functions/$getSplit.md)
 * [$getVar](functions/$getVar.md)
 * [$hasText](functions/$hasText.md)
