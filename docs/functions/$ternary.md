@@ -4,7 +4,7 @@ Checks a condition then return a result depending the fields provided.
 ### Parameters:
 | Name        | Type        | Description                                   | Optional |
 | ----------- | ----------- | --------------------------------------------- | -------- |
-| condition   | String      | The ocndition to check.                       | false    |
+| condition   | String      | The condition to check.                       | false    |
 | ifTrue      | Any         | Anything to return if the condition is true.  | false    |
 | ifFalse     | Any         | Anything to return if the condition is false. | false    |
 
