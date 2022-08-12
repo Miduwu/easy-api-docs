@@ -12,6 +12,6 @@ $hasVar[Test] // true
 $setVar[Test;Hello]
 ```
 
-> ⚠: You need to setup the database to use this function. Check [tips](tips.md?id=using-database)
+!> You need to setup the database to use this function. Check [tips](tips.md?id=using-database)
 
 

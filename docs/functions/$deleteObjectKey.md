@@ -2,14 +2,19 @@
 Delete a key value from a created object.
 
 ### Parameters:
-| Name      | Type                | Description                        | Optional |
-| --------- | ------------------- | ---------------------------------- | -------- |
-| name | String              | Name of the key value you want to delete . | false |
+| Name      | Type        | Description     | Optional |
+| --------- | ----------- | --------------- | -------- |
+| keys      | String      | They keys path. | false |
 
 ### Example:
 ```js
-$deleteObjectKey[hello] // will delete that key from the object, Final: { start: 'hiii' }
-$setObjectKey[hello;hi]
-$setObjectKey[start;hiii]
-$createObject
+$deleteObjectKey[hello.a.b] // will delete that key from the object, Final: { hello: { "a": { "c": false } } }
+$createObject[{
+    "hello": {
+        "a": {
+            "b": true,
+            "c": false
+        }
+    }
+}]
 ```

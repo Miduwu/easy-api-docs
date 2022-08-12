@@ -36,9 +36,9 @@ $request[https://anylink;{
     data: 'anything'
 };headerName:headerValue;headerName2:headerValue2]
 ```
-> 💡: You can use [**`$getData`**](/functions/$getData.md) function to get the data from this request.
+?> 💡: You can use [**`$getData`**](/functions/$getData.md) function to get the data from this request.
 
-### TIP: You can send logs with Discord Webhooks:
+#### TIP: You can send logs with Discord Webhooks:
 ```
 $request[https://discord.com/api/v9/webhooks/:id/:token;{
     method: 'POST',

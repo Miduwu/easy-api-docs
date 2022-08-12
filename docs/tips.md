@@ -34,6 +34,8 @@ module.exports = {
 }
 ```
 
+-- --
+
 ## Using database
 
 Save, get and delete variables from the database.
@@ -46,7 +48,7 @@ const api = new API({
     port: process.env.PORT || 3000,
     database: {
         enabled: true, // VERY IMPORTANT TO ENABLE IT!!
-        type: 'replit', // You can use: 'replit' | 'default' | 'mongo'
+        type: 'replit', // You can use: 'replit' | 'mongo' | 'quickdb' | 'default'
         // mongoUrl: '...'
     }
 })
@@ -61,6 +63,8 @@ api.connect()
 `$getVar[var name]` [docs here.](functions/$getVar.md)
 
 `$setVar[var name;value]` [docs here.](functions/$setVar.md)
+
+-- --
 
 ## Adding your own function
 

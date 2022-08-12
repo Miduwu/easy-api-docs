@@ -4,7 +4,7 @@ Get a route property
 ### Parameters:
 | Name        | Type        | Description                          | Optional |
 | ----------- | ----------- | ------------------------------------ | -------- |
-| property    | String      | The property from route to get.      | false    |
+| keys        | String      | The property from route to get.      | false    |
 
 **Endpoint template example:**
 ```js

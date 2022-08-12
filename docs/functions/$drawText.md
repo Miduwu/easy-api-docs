@@ -20,4 +20,4 @@ $createCanvas[512;512] // required to use this function
 
 **Explanation:**
 
-![image](https://i.imgur.com/qV2x2zV.jpg)
+![image](https://i.imgur.com/qV2x2zV.jpg ':size=650x500')

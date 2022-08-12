@@ -1,5 +1,5 @@
 # $log
-Check if the text provided is a valid number.
+Log something in the console
 
 ### Parameters:
 | Name        | Type        | Description                         | Optional |

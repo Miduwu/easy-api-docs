@@ -6,7 +6,7 @@ Change the canvas context opacity.
 | -------- | --------- | ------------------------ | -------- |
 | opacity  | Number    | The new context opacity. | false    |
 
-> **The opacity must be between `1` and `100`**
+?> **The opacity must be between "1" and "100"**
 
 ### Example:
 

@@ -13,4 +13,4 @@ $getVar[hi] // ok
 $setVar[hi;ok] // We're setting it
 ```
 
-> ⚠: You need to setup the database to use this function. Check [tips](tips.md?id=using-database)
+!> You need to setup the database to use this function. Check [tips](tips.md?id=using-database)

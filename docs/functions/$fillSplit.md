@@ -7,9 +7,7 @@ Replace a split element with something.
 | something   | String      | Something to replace the element.         | true    |
 
 ### Example:
-```ts
-/* $fillSplit[element;something?] */
-
+```js
 $joinSplits[|] // hello|yes|ok
 $fillSplit[bye;yes]
 $textSplit[hello|bye|ok;|]

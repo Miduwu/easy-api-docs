@@ -2,21 +2,16 @@
 Get a property value from the json request object (if any).
 
 ### Parameters:
-| Name      | Type                | Description                        | Optional |
-| --------- | ------------------- | ---------------------------------- | -------- |
-| property | property              | The property from the object to get the value. | false |
+| Name      | Type       | Description                        | Optional |
+| --------- | ---------- | ---------------------------------- | -------- |
+| keys      | String \| $default     | The property from the object to get the value. | false |
 
 ### Example:
 ```js
-$getData[data.something] 
-$request[...] // required to use this function
-
 // Example code:
 $send[$getData[data.translated]] // returns: Bonjour le monde
 $request[https://api.miduwu.ga/json/translate?source=auto&target=fr&text=Hello+world]
 ```
-
-<br/>
 
 __ __
 <br/>

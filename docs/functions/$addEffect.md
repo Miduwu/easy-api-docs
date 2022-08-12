@@ -16,9 +16,9 @@ Apply an effect to the canvas context.
 - **`saturate`** Saturates the drawing. A value of `0` means completely un-saturated. A value of `100` leaves the drawing unchanged.
 - **`sepia`** Converts the drawing to sepia. A value of `100` means completely sepia. A value of `0` leaves the drawing unchanged.
 
-> [`CanvasRenderingContext2D/filter`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter)
+?> [`CanvasRenderingContext2D/filter`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter)
 
-> 💡: Remove the effect using [`$removeEffect`](functions/$removeEffect.md)
+?> 💡: Remove the effect using [`$removeEffect`](functions/$removeEffect.md)
 
 ### Example:
 ```js

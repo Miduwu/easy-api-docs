@@ -8,6 +8,6 @@ Get an enviorement variable value (You need to authorize that).
 | authorization  | Boolean      | Your authorization (true).        | false    |
 
 ### Example:
-```ts
+```js
 $env[superSecretKey;true]
 ```

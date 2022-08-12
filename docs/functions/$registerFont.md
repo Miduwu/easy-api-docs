@@ -7,7 +7,7 @@ Register a custom font from a path.
 | path         | String   | The font file location.            | false       |
 | family       | String   | The font family to register (name) | false       |
 
-!> **Allowed font formats: `.ttf`, `.otf`**
+!> **Allowed font formats: ".ttf", ".otf"**
 
 ### Example:
 

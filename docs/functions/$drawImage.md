@@ -10,7 +10,7 @@ Draws an image in a canvas.
 | width    | Number    | Image width.           | false    |
 | height   | Number    | Image height.          | false    |
 
-> **You need to load an image first using [`$loadImage`](functions/$loadImage)**
+?> **You need to load an image first using [`$loadImage`](functions/$loadImage)**
 
 ### Example:
 
