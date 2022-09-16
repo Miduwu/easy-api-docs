@@ -9,6 +9,5 @@ Abbreviates the provided number.
 
 ### Example:
 ```js
-...
 $abbreviateNumber[9210;3] //Returns: 9.21k
 ```

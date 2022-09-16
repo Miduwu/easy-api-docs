@@ -8,6 +8,5 @@ Creates a folder in the provided path.
 
 ### Example:
 ```js
-...
 $createFolder[./myAssets/Images] //Creates "Images" folder inside "myAssets" folder.
 ```

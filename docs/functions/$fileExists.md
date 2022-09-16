@@ -8,6 +8,5 @@ Check if file exists in the provided path.
 
 ### Example:
 ```js
-...
 $fileExists[./assets/files/best.txt] //Returns: true
 ```

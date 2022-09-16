@@ -8,6 +8,5 @@ Reads a file, if the file exists.
 
 ### Example:
 ```js
-...
 $readFile[./assets/files/best.txt] //Returns: Hello
 ```

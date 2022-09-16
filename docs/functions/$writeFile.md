@@ -9,6 +9,5 @@ Replaces any content the provided content in the provided file, if the file exis
 
 ### Example:
 ```js
-...
 $writeFile[./assets/files/best.txt;Viva México] //Replaces "Hello" with "Viva México".
 ```

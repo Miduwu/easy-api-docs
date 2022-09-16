@@ -9,6 +9,5 @@ Returns the file size, if the file exists.
 
 ### Example:
 ```js
-...
 $fileSize[./assets/files/best.txt;2] //Returns: 46.04
 ```

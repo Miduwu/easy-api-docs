@@ -8,6 +8,5 @@ Deletes a file, if the file exists.
 
 ### Example:
 ```js
-...
 $deleteFile[./assets/files/best.txt] //Deletes "best.txt" file from "./assets/files".
 ```

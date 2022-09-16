@@ -9,6 +9,5 @@ Appends content to the end of the file, if the file exists.
 
 ### Example:
 ```js
-...
 $appendFile[./assets/files/best.txt;Hello] //Writes "Hello" into the "best.txt" file.
 ```
