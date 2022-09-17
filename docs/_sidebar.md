@@ -77,6 +77,7 @@
 * [$slice](functions/$slice.md)
 * [$split](functions/$split.md)
 * [$splitsCount](functions/$splitsCount.md)
+* [$switch](functions/$switch.md)
 * [$ternary](functions/$ternary.md)
 * [$timeout](functions/$timeout.md)
 * [$trim](functions/$trim.md)
