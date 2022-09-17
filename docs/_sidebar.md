@@ -8,13 +8,17 @@
 
 - **Functions**
 
+* [$abbreviateNumber](functions/$abbreviateNumber.md)
 * [$addEffect](functions/$addEffect.md)
+* [$appendFile](functions/$appendFile.md)
 * [$break](functions/$break.md)
 * [$charCount](functions/$charCount.md)
 * [$color](functions/$color.md)
 * [$condition](functions/$condition.md)
 * [$createCanvas](functions/$createCanvas.md)
+* [$createFolder](functions/$createFolder.md)
 * [$createObject](functions/$createObject.md)
+* [$deleteFile](functions/$deleteFile.md)
 * [$deleteObjectKey](functions/$deleteObjectKey.md)
 * [$deleteVar](functions/$deleteVar.md)
 * [$drawImage](functions/$drawImage.md)
@@ -23,6 +27,8 @@
 * [$encodeURI](functions/$encodeURI.md)
 * [$env](functions/$env.md)
 * [$escape](functions/$escape.md)
+* [$fileExists](functions/$fileExists.md)
+* [$fileSize](functions/$fileSize.md)
 * [$fillSplit](functions/$fillSplit.md)
 * [$fixed](functions/$fixed.md)
 * [$font](functions/$font.md)
@@ -56,6 +62,7 @@
 * [$random](functions/$random.md)
 * [$randomNumber](functions/$randomNumber.md)
 * [$randomString](functions/$randomString.md)
+* [$readFile](functions/$readFile.md)
 * [$registerFont](functions/$registerFont.md)
 * [$removeEffect](functions/$removeEffect.md)
 * [$repeat](functions/$repeat.md)
@@ -76,4 +83,5 @@
 * [$tryIf](functions/$tryIf.md)
 * [$uppercase](functions/$uppercase.md)
 * [$var](functions/$var.md)
+* [$writeFile](functions/$writeFile.md)
 
