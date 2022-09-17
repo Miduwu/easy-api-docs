@@ -13,8 +13,8 @@ $drawText[Hello;...]
 $font[50;Arial]
 $createCanvas[$get[width];$get[height]] // now we're creating a corresponding canvas with the text size
 
-$let[height;$measureText[Hello;height]]
-$let[width;$measureText[Hello;width]]
+$var[height;$measureText[Hello;height]]
+$var[width;$measureText[Hello;width]]
 $font[50;Arial] // Setting up the font size to measure it
 $createCanvas[10;10] // not an important canvas, we're creating one to set up the text settings.
 ```
