@@ -16,4 +16,4 @@ $switch[...choices]
 $switch[undefined;undefined;hi] //Returns: hi
 ```
 
-> **Note:** If all options are undefined, then it will return undefined.
+?> **Note:** If all options are undefined, then it will return undefined.
