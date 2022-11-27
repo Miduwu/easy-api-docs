@@ -10,6 +10,6 @@ Replace a split element with something.
 ```js
 $joinSplits[|] // hello|yes|ok
 $fillSplit[bye;yes]
-$textSplit[hello|bye|ok;|]
+$split[hello|bye|ok;|]
 ```
 
