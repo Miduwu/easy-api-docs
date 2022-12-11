@@ -10,23 +10,26 @@ import { API } from "easy-api.ts"; // use 'const { API } = require("easy-api.ts"
 
 const api = new API({
     port: process.env.PORT || 3000,
-    spaces: 1
+    spaces: 1,
+    reverseReading: false
 })
 
 api.routes.add({
     path: '/color',
     code: `
-    $ignore[Check docs to see how does functions work]
-    $send[200;canvas;$default]
-    $drawRect[0;0;512;512]
-    $color[$getQuery[hex]]
+    $ignore[Check docs to see how does functions work ;)]
+    $if[$getQuery[hex]==undefined||$isValidHex[$getQuery[hex]]==false;
+        $send[400;json;{
+            "error": "Invalid hex color code provided"
+        }]
+        $break $ignore[IMPORTANT!!]
+    ]
+
     $createCanvas[512;512]
-    $if[$isValidHex[$getQuery[hex]]==false;400;{
-        error: "Invalid hex code provided."
-    }]
-    $if[$getQuery[hex]==undefined;400;{
-        error: "Missing 'hex' parameter."
-    }]
+    $color[$getQuery[hex]]
+    $drawRect[0;0;512;512]
+    $send[200;canvas;$default]
+    `
     `
 })
 
@@ -37,12 +40,10 @@ api.routes.load('./routes').then(() => {
 })
 ```
 
-## You must know...
+## You need to know...
 - You need node **>=14**
-- The code start reading from bottom to the top.
 - This is a wrapper of express extended with custom functions like canvas.
 - This can contain some bugs (report it).
-- This is package can be used in JavaScript (use const instead import) and TypeScript
 - We'd like you to join our support server.
 
-?> ![img](https://cdn.discordapp.com/emojis/829109483526422570.png ':size=13') Synced with **1.1.0** version.
+?> ![img](https://cdn.discordapp.com/emojis/829109483526422570.png ':size=13') Synced with **2.0.0** version.
