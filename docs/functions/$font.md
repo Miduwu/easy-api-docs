@@ -12,7 +12,7 @@ Set the canvas font.
 
 ### Example:
 ```js
-$drawText[...] // This text will be 'bold 30px Arial'
 $font[30;Arial;bold]
 $createCanvas[512;512]
+$drawText[...] // This text will be 'bold 30px Arial'
 ```
