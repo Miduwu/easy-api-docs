@@ -23,6 +23,7 @@ Apply an effect to the canvas context.
 ### Example:
 ```js
 ...
-$addEffect[grayscale;50]
 $createCanvas[512;512]
+$addEffect[grayscale;50]
+
 ```
