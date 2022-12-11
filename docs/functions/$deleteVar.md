@@ -8,10 +8,10 @@ Delete a variable from the database.
 
 ### Example:
 ```js
-$getVar[hi] // undefined
-$deleteVar[hi]
-$getVar[hi] // ok
 $setVar[hi;ok]
+$getVar[hi] // ok
+$deleteVar[hi]
+$getVar[hi] // undefined
 ```
 
 !> You need to setup the database to use this function. Check [tips](tips.md?id=using-database)
