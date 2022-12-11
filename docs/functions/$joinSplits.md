@@ -8,6 +8,6 @@ Get the splits elements in a separator.
 
 ### Example:
 ```js
-$joinSplits[ - ] // hello - bye - ok
 $textSplit[hello|bye|ok;|]
+$joinSplits[ - ] // hello - bye - ok
 ```

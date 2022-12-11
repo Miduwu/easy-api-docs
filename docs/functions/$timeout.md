@@ -10,12 +10,12 @@ Set the max timeout for this route and the JSON response.
 
 ### Example:
 ```js
-$send[wrong fields] // this will give an error
-
 // so this will set the max timeout, if there isnt a response after that time then it will reply this
 $timeout[$parseTime[30s];500;{
     "error": "Something internal went wrong"
 }]
+
+$send[wrong fields] // this will give an error
 ```
 
 !> Learn how to use **$parseTime** clicking: [here](functions/$parseTime.md)

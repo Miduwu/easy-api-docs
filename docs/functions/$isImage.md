@@ -8,8 +8,8 @@ Check if an image ID was loaded.
 
 ### Example:
 ```js
-$isImage[secondId] // false
-$isImage[myId] // true
-$loadImage[secondId;hello]
 $loadImage[myId;https://myimage.png] // required to use this function
+$loadImage[secondId;hello]
+$isImage[myId] // true
+$isImage[secondId] // false
 ```

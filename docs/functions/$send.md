@@ -16,14 +16,14 @@ $send[200;json;{
 }]
 
 // for safe objects
-$send[200;safe;$default]
-$setObjectKey[data;Hello!]
 $createObject
+$setObjectKey[data;Hello!]
+$send[200;safe;$default]
 
 // for canvas
-$send[200;canvas;$default]
-// more canvas things here...
 $createCanvas
+// more canvas things here...
+$send[200;canvas;$default]
 
 // for files (json, html, etc...)
 $send[200;file;./location/file.ext]
