@@ -45,4 +45,4 @@ api.routes.load('./routes').then(() => {
 - This is package can be used in JavaScript (use const instead import) and TypeScript
 - We'd like you to join our support server.
 
-?> ![img](https://cdn.discordapp.com/emojis/829109483526422570.png ':size=13') Synced with **1.1.0** version.
+?> ![img](https://cdn.discordapp.com/emojis/829109483526422570.png ':size=13') Synced with **2.0.0** version.
