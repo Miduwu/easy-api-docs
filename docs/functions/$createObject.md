@@ -8,11 +8,12 @@ Create an object to be edited later
 
 ### Example:
 ```js
-$setObjectKey[hello.a;c] // Now we can edit it
-
 $createObject[{
     "hello": {
         "a": "b"
     }
 }]
+$setObjectKey[hello.a;c] // Now we can edit it
+
+
 ```

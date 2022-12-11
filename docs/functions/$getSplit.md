@@ -8,6 +8,6 @@ Get a split element from the splitted text.
 
 ### Example:
 ```js
-$getSplit[2] // bye
 $split[hello|bye|ok;|] // required to use this function
+$getSplit[2] // bye
 ```

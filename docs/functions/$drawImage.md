@@ -15,7 +15,7 @@ Draws an image in a canvas.
 ### Example:
 
 ```js
-$drawImage[myCoolId;0;0;512;512]
 $loadImage[myCoolId;https://i.imgur.com/upR5GuS.png] // required to use this function
 $createCanvas[512;512] // required to use this function
+$drawImage[myCoolId;0;0;512;512]
 ```

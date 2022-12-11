@@ -13,6 +13,6 @@ $findSplitIndex[query]
 
 ### Example:
 ```js
-$findSplitIndex[Hola] //returns 3
 $split[Hello,Hi,Hola;,]
+$findSplitIndex[Hola] //returns 3
 ```

@@ -8,8 +8,8 @@ Check if there is a variable in the database.
 
 ### Example:
 ```js
-$hasVar[Test] // true
 $setVar[Test;Hello]
+$hasVar[Test] // true
 ```
 
 !> You need to setup the database to use this function. Check [tips](tips.md?id=using-database)

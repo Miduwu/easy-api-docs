@@ -8,7 +8,6 @@ Delete a key value from a created object.
 
 ### Example:
 ```js
-$deleteObjectKey[hello.a.b] // will delete that key from the object, Final: { hello: { "a": { "c": false } } }
 $createObject[{
     "hello": {
         "a": {
@@ -17,4 +16,5 @@ $createObject[{
         }
     }
 }]
+$deleteObjectKey[hello.a.b] // will delete that key from the object, Final: { hello: { "a": { "c": false } } }
 ```

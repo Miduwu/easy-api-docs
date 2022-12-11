@@ -8,6 +8,6 @@ Get a local variable value.
 
 ### Example:
 ```js
-$get[test] // ok
 $var[test;ok] // required to use this function
+$get[test] // ok
 ```

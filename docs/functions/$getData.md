@@ -9,8 +9,8 @@ Get a property value from the json request object (if any).
 ### Example:
 ```js
 // Example code:
-$send[$getData[data.translated]] // returns: Bonjour le monde
 $request[https://api.miduwu.ga/json/translate?source=auto&target=fr&text=Hello+world]
+$send[$getData[data.translated]] // returns: Bonjour le monde
 ```
 
 __ __
