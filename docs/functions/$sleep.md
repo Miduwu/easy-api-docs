@@ -8,7 +8,7 @@ Await a process.
 
 ### Example:
 ```js
-$log[This will be logged after 20 seconds L]
-$sleep[$math[20 * 1000]]
 $log[ok starting]
+$sleep[$math[20 * 1000]]
+$log[This will be logged after 20 seconds L]
 ```

@@ -9,8 +9,8 @@ Set a variable in the database.
 
 ### Example:
 ```js
-$getVar[hi] // ok
 $setVar[hi;ok] // We're setting it
+$getVar[hi] // ok
 ```
 
 !> You need to setup the database to use this function. Check [tips](tips.md?id=using-database)

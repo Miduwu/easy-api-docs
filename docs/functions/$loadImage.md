@@ -10,6 +10,6 @@ Loads an image and save id as an ID.
 
 ### Example:
 ```js
-$loadImage[myPathImg;path;./image.png] // for local images.
 $loadImage[myUrlImg;link;https://...] // for remote images.
+$loadImage[myPathImg;path;./image.png] // for local images.
 ```

@@ -8,7 +8,7 @@ $sortSplits[separator]
 
 ### Example:
 ```js
-$sortSplits[.] //Returns: CGX.Inu.Mid
-$joinSplits[.] //Returns: Inu.Mid.CGX
 $split[Inu,Mid,CGX;,]
+$joinSplits[.] //Returns: Inu.Mid.CGX
+$sortSplits[.] //Returns: CGX.Inu.Mid
 ```

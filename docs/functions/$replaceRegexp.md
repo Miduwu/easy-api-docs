@@ -11,6 +11,6 @@ Replace something using RegExp.
 
 ### Example:
 ```js
-$replaceRegexp[$get[text];/[^a-zA-Z0-9]/;g;] // Hello  what are u doing
 $var[text;Hello $ #what are u doing!]
+$replaceRegexp[$get[text];/[^a-zA-Z0-9]/;g;] // Hello  what are u doing
 ```

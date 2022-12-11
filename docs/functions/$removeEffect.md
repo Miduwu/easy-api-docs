@@ -3,8 +3,8 @@ Remove the current canvas context.
 
 ### Example:
 ```js
-$removeEffect
-$ignore[more things here...]
-$addEffect[blur;40]
 $createCanvas[512;512]
+$addEffect[blur;40]
+$ignore[more things here...]
+$removeEffect
 ```

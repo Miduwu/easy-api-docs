@@ -9,6 +9,6 @@ Set a new local variable value.
 
 ### Example:
 ```js
-// now you can get the value using $get
 $var[test;ok]
+// now you can get the value using $get
 ```

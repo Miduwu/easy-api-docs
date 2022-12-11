@@ -9,14 +9,14 @@ Measure the text with the actual canvas context settings.
 
 ### Example:
 ```js
-$drawText[Hello;...]
-$font[50;Arial]
-$createCanvas[$get[width];$get[height]] // now we're creating a corresponding canvas with the text size
-
-$var[height;$measureText[Hello;height]]
-$var[width;$measureText[Hello;width]]
-$font[50;Arial] // Setting up the font size to measure it
 $createCanvas[10;10] // not an important canvas, we're creating one to set up the text settings.
+$font[50;Arial] // Setting up the font size to measure it
+$var[width;$measureText[Hello;width]]
+$var[height;$measureText[Hello;height]]
+
+$createCanvas[$get[width];$get[height]] // now we're creating a corresponding canvas with the text size
+$font[50;Arial]
+$drawText[Hello;...]
 ```
 
 **If the type is `object` then it will return something like:**

@@ -9,6 +9,6 @@ Set a key value to the created object.
 
 ### Example:
 ```js
-$setObjectKey[b;false] 
 $createObject[{ "a": true }] // required to use this function
+$setObjectKey[b;false]
 ```
