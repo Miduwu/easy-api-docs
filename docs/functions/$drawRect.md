@@ -13,7 +13,7 @@ Draws a rectangle in a canvas.
 ### Example:
 
 ```js
-$drawRect[0;0;512;512] // Draws the rectangle with color
-$color[#040E20]
 $createCanvas[512;512] // required to use this function
+$color[#040E20]
+$drawRect[0;0;512;512] // Draws the rectangle with color
 ```
