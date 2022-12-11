@@ -14,8 +14,8 @@ Draws a text box in the canvas.
 ### Example:
 
 ```js
-$drawText[Hello this is a text;20;20;450;400] // This will draw that text.
 $createCanvas[512;512] // required to use this function
+$drawText[Hello this is a text;20;20;450;400] // This will draw that text.
 ```
 
 **Explanation:**
