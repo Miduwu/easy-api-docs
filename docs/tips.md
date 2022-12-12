@@ -113,7 +113,7 @@ $if[$getQuery[hi]==undefined;$callback[throwError;400;Missing parameter: 'hi']]
 $send[200;json;{}]
 ```
 
-# Reverse reading
+## Reverse reading
 Now ea.ts reads from top to bottom, but also can read from bottom to top, to switch between read modes, use the constructor options object.
 **Example:**
 ```js
