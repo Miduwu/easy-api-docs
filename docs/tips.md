@@ -80,13 +80,35 @@ api.interpreter.addFunction({
     data: new FunctionBuilder()
     .setName('test'),
     code: async d => {
-        const unpacked = d.unpack(d)
-        if(!unpacked.inside) return Utils.Warn('Invalid inside provided in:', d.func)
+        await d.func.resolve_fields(d) // required to load overloads
+        if(!d.func.inside) return Utils.Warn('Invalid inside provided in:', d.func)
         return {
-            code: d.code.resolve(`${d.func}[${unpacked.inside}]`, unpacked.inside + '< was a test.')
+            code: d.code.replace(d.func.id, `${d.func.inside} its the inside!`)
         }
     }
 })
 
 api.connect()
+```
+
+-- --
+
+## Using callbacks
+
+The callbacks are callable functions using the EA.TS interpreter, (custom functions)
+
+?> Access to the parameters using: `%PARAM_index%`
+
+**Example:**
+```
+$createCallback[throwError;
+    $send[%PARAM_1%;json;
+        { "status": %PARAM_1%, "error": "%PARAM_2%" }
+    ]
+    $break
+]
+
+$if[$getQuery[hi]==undefined;$callback[throwError;400;Missing parameter: 'hi']]
+
+$send[200;json;{}]
 ```
