@@ -115,6 +115,7 @@ $send[200;json;{}]
 
 ## Reverse reading
 Now ea.ts reads from top to bottom, but also can read from bottom to top, to switch between read modes, use the constructor options object.
+
 **Example:**
 ```js
 import { API, FunctionBuilder, Utils } from "easy-api.ts";
