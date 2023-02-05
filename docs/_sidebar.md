@@ -26,7 +26,6 @@
 * [$createCallback](functions/$createCallback.md)
 * [$createCanvas](functions/$createCanvas.md)
 * [$createFolder](functions/$createFolder.md)
-* [$createObject](functions/$createObject.md)
 * [$deleteFile](functions/$deleteFile.md)
 * [$deleteObjectKey](functions/$deleteObjectKey.md)
 * [$deleteVar](functions/$deleteVar.md)
