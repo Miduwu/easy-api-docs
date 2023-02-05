@@ -9,6 +9,5 @@ Splits a text using a separator.
 
 ### Example:
 ```js
-$split[Hello|bye|ok;|] // this only splits the text
-$getSplit[3] // this function will get the element from a position in the splits
+$split[Hello|bye|ok;|] // Returns: '["Hello", "bye", "ok"]' (ArrayLike)
 ```
