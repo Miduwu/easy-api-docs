@@ -1,4 +1,4 @@
-# $findSplitIndex
+# $arrayFindIndex
 Finds a text into the elements, if the text is found, returns its index, otherwise returns 0.
 
 ### Parameters:
