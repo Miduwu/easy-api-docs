@@ -57,7 +57,7 @@
 * [$isArray](functions/$isArray.md)
 * [$isImage](functions/$isImage.md)
 * [$isNumber](functions/$isNumber.md)
-* [$isObject](funcions/$isObject.md)
+* [$isObject](functions/$isObject.md)
 * [$isValidHex](functions/$isValidHex.md)
 * [$jsEval](functions/$jsEval.md)
 * [$loadImage](functions/$loadImage.md)

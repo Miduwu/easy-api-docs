@@ -2,11 +2,18 @@
 A powerful library to create your own API with ease.
 
 ![image](https://camo.githubusercontent.com/1b637c74e2bcd2feb02d7a3ca3d61263bed5d673dfd472ee663157db1d2000f6/68747470733a2f2f692e696d6775722e636f6d2f326b735a5342792e6a7067 ':size=750')
+## Install
+> `npm i easy-api.ts`
+
+## Features
+- 🚀 Optimized and advanced codes and functions.
+- 📝 Easy to learn.
+- 📚 Constant updates.
+- 🔥 Image manipulation.
 
 ## Easy setup
-
 ```js
-import { API } from "easy-api.ts"; // use 'const { API } = require("easy-api.ts")' for JavaScript
+const { API } = require("easy-api.ts"); // Use: import { API } from 'easy-api.ts'; for TypeScript.
 
 const api = new API({
     port: process.env.PORT || 3000,
