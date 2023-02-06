@@ -5,9 +5,9 @@ Check if a code has a text.
 | Name        | Type        | Description                          | Optional |
 | ----------- | ----------- | ------------------------------------ | -------- |
 | source      | String      | The source text.                     | false    |
-| text        | String      | The text to check.                   | false    |
+| ...texts    | String      | The texts to check.                  | false    |
 
 ### Example:
 ```js
-$hasText[hello world;hello] // true
+$hasText[hello world;uno;fella;ew] // false
 ```

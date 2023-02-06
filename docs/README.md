@@ -46,4 +46,4 @@ api.routes.load('./routes').then(() => {
 - This can contain some bugs (report it).
 - We'd like you to join our support server.
 
-?> ![img](https://cdn.discordapp.com/emojis/829109483526422570.png ':size=13') Synced with **2.0.0** version.
+?> ![img](https://cdn.discordapp.com/emojis/829109483526422570.png ':size=13') Synced with **2.1.0** version.
