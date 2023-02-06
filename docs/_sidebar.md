@@ -16,6 +16,7 @@
 * [$arrayFindIndex](functions/$arrayFindIndex.md)
 * [$arrayJoin](functions/$arrayJoin.md)
 * [$arrayLength](functions/$arrayLength.md)
+* [$arrayPush](functions/$arrayPush.md)
 * [$arraySlice](functions/$arraySlice.md)
 * [$arraySort](functions/$arraySort.md)
 * [$break](functions/$break.md)
