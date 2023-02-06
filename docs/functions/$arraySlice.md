@@ -11,6 +11,6 @@ Returns an array slice.
 
 ### Example
 ```js
-$var[myArray;$split[ok|xd|si|no|waos|omaga;|]]
-$arraySlice[myArray;2;5; - ] // Returns: si - no - waos
+$var[myArray;$split[ok|si|no|waos|omaga;|]]
+$arraySlice[myArray;2;4; - ] // Returns: si - no - waos
 ```
