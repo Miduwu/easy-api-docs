@@ -1,5 +1,5 @@
-# $arrayJoin
-Get the array elements in a separator.
+# $arrayReverse
+Reverses the elements orden of an array.
 
 ### Parameters:
 | Name               | Type                | Description                                  | Optional |
@@ -9,6 +9,6 @@ Get the array elements in a separator.
 
 ### Example:
 ```js
-$var[myArray;$split[hello|bye|ok;|]] // "["hello", "bye", "ok"]"
-$arrayJoin[myArray; - ] // hello - bye - ok
+$var[splits;$split[CGX-IS-COOL-OMG;-]]
+$arrayReverse[splits;,] // returns: OMG,COOL,IS,CGX
 ```

@@ -1,14 +1,14 @@
-# $arrayJoin
-Get the array elements in a separator.
+# $arrayShift
+Removes the first array item and, optionally, returns it.
 
 ### Parameters:
 | Name               | Type                | Description                                  | Optional |
 | ------------------ | ------------------- | -------------------------------------------- | -------- |
 | variable name      | String              | The variable name where the array is saved.  | false    |
-| separator          | String              | Separator to join the splits.                | false    |
+| return             | String              | Return the element.                          | true     |
 
 ### Example:
 ```js
-$var[myArray;$split[hello|bye|ok;|]] // "["hello", "bye", "ok"]"
-$arrayJoin[myArray; - ] // hello - bye - ok
+$var[splits;$split[hello|bye|ok;|]]
+$arrayShift[splits;true] // returns: hello
 ```

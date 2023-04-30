@@ -1,14 +1,14 @@
-# $arrayJoin
-Get the array elements in a separator.
+# $arrayIncludes
+Returns whether an array includes an element or not.
 
 ### Parameters:
 | Name               | Type                | Description                                  | Optional |
 | ------------------ | ------------------- | -------------------------------------------- | -------- |
 | variable name      | String              | The variable name where the array is saved.  | false    |
-| separator          | String              | Separator to join the splits.                | false    |
+| ...querys          | String              | Elements to search for.                      | false    |
 
 ### Example:
 ```js
-$var[myArray;$split[hello|bye|ok;|]] // "["hello", "bye", "ok"]"
-$arrayJoin[myArray; - ] // hello - bye - ok
+$var[splits;$split[hello|bye|ok;|]]
+$arrayIncludes[splits;hola;adios] // returns: false
 ```
