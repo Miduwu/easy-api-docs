@@ -78,6 +78,7 @@
 * [$math](functions/$math.md)
 * [$measureText](functions/$measureText.md)
 * [$opacity](functions/$opacity.md)
+* [$or](functions/$or.md)
 * [$parseTime](functions/$parseTime.md)
 * [$protocol](functions/$protocol.md)
 * [$random](functions/$random.md)
