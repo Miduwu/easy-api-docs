@@ -8,5 +8,5 @@ Redirects the request to another API path.
 
 ### Example:
 ```js
-$redirect[https:\/\/npmjs.com/package/easy-api.ts]
+$redirect[/endpoints]
 ```
