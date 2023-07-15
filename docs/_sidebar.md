@@ -17,6 +17,7 @@
 * [$arrayFill](functions/$arrayFill.md)
 * [$arrayFind](functions/$arrayFind.md)
 * [$arrayFindIndex](functions/$arrayFindIndex.md)
+* [$arrayForEach](functions/$arrayForEach.md)
 * [$arrayIncludes](functions/$arrayIncludes.md)
 * [$arrayIndexOf](functions/$arrayIndexOf.md)
 * [$arrayJoin](functions/$arrayJoin.md)
