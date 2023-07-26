@@ -2,46 +2,66 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# EASY-API ![img](https://cdn.discordapp.com/emojis/978823080300380170.png ':size=20')
+A powerful library to create your own API with ease.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+![image](https://camo.githubusercontent.com/1b637c74e2bcd2feb02d7a3ca3d61263bed5d673dfd472ee663157db1d2000f6/68747470733a2f2f692e696d6775722e636f6d2f326b735a5342792e6a7067 ':size=750')
+## Install
+> `npm i easy-api.ts`
 
-## Getting Started
+## Features
+- 🚀 Optimized and advanced codes and functions.
+- 📝 Easy to learn.
+- 📚 Constant updates.
+- 🔥 Image manipulation.
 
-Get started by **creating a new site**.
+## Easy setup
+```js
+const { API } = require("easy-api.ts"); // Use: import { API } from 'easy-api.ts'; for TypeScript.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+const api = new API({
+    reverse: false
+});
 
-### What you'll need
+api.route({
+    url: '/color',
+    method: "GET",
+    code: `
+    $ignore:[Check docs to see how does functions work ;)]
+    $if:[$or:[$query:[hex]==null;$isValidHex:[$query:[hex]]==false];
+        $response:[
+            $setCode:[400]
+            $setType:[json]
+            $setBody:[{
+                "error": "Invalid hex color code provided"
+            }]
+        ]
+        $break $ignore:[IMPORTANT!!]
+    ]
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+    $createCanvas:[
+        $setDimentions:[512;512]
+        $color:[$query:[hex]]
+        $drawRect:[0;0;512;512]
+    ]
+    $response: [
+        $setCode:[200]
+        $setType:[canvas]
+        $setBody:[$default]
+    ]
+    `
+    `
+})
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+// Lets load the handler...
+api.load('./routes').then(() => {
+    console.log('Source loaded.')
+    api.connect({ port: process.env["PORT"] || 3000 }) // We're connecting to the API when the source is loaded.
+})
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## You need to know...
+- You need node **>=14**
+- This is a wrapper of express extended with custom functions like canvas.
+- This can contain some bugs (report it).
+- We'd like you to join our support server.
