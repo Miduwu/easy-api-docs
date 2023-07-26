@@ -1,17 +1,18 @@
-# $arrayAt
-Return the array element at the provided index.
+# $arrayDelete
+Deletes an array from the interpreter data.
 
 ## Usage
-> `$arrayAt:[name;index]`
+> `$arrayDelete:[name]`
 
 ## Fields
 | Name  | Description        | Type   | Level    |
 | ----- | ------------------ | ------ | -------- |
 | name  | The array name.    | String | Required |
-| index | The element index. | Number | Required |
 
 ## Example
 ```js
 $newArray:[data;a,b,c,d;,]
 $arrayAt:[data;3] // c
+$arrayDelete:[data]
+$arrayAt:[data;3] // throws an error.
 ```

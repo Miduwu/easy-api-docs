@@ -1,0 +1,17 @@
+# $arrayPop
+Removes the last array element, and returns it.
+
+## Usage
+> `$arrayPop:[name]`
+
+## Fields
+| Name  | Description          | Type   | Level    |
+| ----- | -------------------- | ------ | -------- |
+| name  | The array name.      | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayPop:[data] // d
+$arrayJoin:[data;, ] // a, b, c
+```

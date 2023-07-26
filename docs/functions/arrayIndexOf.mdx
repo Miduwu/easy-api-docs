@@ -1,0 +1,18 @@
+# $arrayIndexOf
+Returns the index of the first array element matched.
+
+## Usage
+> `$arrayIndexOf:[name;match]`
+
+## Fields
+| Name  | Description          | Type   | Level    |
+| ----- | -------------------- | ------ | -------- |
+| name  | The array name.      | String | Required |
+| match | The element to find. | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayIndexOf:[data;b] // 2
+$arrayIndexOf:[data;mango] // -1 (Doesn't exists)
+```

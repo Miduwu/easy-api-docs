@@ -1,0 +1,17 @@
+# $arrayShift
+Removes the first array element, and returns it.
+
+## Usage
+> `$arrayShft:[name]`
+
+## Fields
+| Name  | Description          | Type   | Level    |
+| ----- | -------------------- | ------ | -------- |
+| name  | The array name.      | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayShift:[data] // a
+$arrayJoin:[data;, ] // b, c, d
+```

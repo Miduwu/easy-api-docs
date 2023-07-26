@@ -1,0 +1,18 @@
+# $arrayLastIndexOf
+Returns the index of the last array element matched.
+
+## Usage
+> `$arrayLastIndexOf:[name;match]`
+
+## Fields
+| Name  | Description          | Type   | Level    |
+| ----- | -------------------- | ------ | -------- |
+| name  | The array name.      | String | Required |
+| match | The element to find. | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d,b;,]
+$arrayLastIndexOf:[data;b] // 5
+$arrayLastIndexOf:[data;mango] // -1 (Doesn't exists)
+```

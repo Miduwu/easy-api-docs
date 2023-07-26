@@ -1,0 +1,25 @@
+# $arrayForEach
+Executes a code field for each array element.
+
+## Usage
+> `$arrayForEach: [name;code]`
+
+## Fields
+| Name  | Description          | Type   | Level    |
+| ----- | -------------------- | ------ | -------- |
+| name  | The array name.      | String | Required |
+| code  | The code to execute. | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayForEach:[
+    $log:[CURRENT ELEMENT: $element] // This will log each element in the array.
+]
+```
+
+:::info
+
+To get the array element use: `$element`.
+
+:::

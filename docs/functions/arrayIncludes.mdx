@@ -1,0 +1,18 @@
+# $arrayIncludes
+Returns whether the array contains the provided element or not.
+
+## Usage
+> `$arrayIncludes:[name;match]`
+
+## Fields
+| Name  | Description          | Type   | Level    |
+| ----- | -------------------- | ------ | -------- |
+| name  | The array name.      | String | Required |
+| match | The element to find. | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayIncludes:[data;a] // true
+$arrayIncludes:[data;mango] // false
+```

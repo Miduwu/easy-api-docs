@@ -1,0 +1,19 @@
+# $arrayRemove
+Removes the provided array element by its index, and optionally, returns it.
+
+## Usage
+> `$arrayRemove: [name;index;return?]`
+
+## Fields
+| Name   | Description          | Type    | Level    |
+| ------ | -------------------- | ------- | -------- |
+| name   | The array name.      | String  | Required |
+| index  | The element index.   | String  | Required |
+| return | Return the element?  | Boolean | Optional |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayRemove:[data;3;true] // c
+$arrayJoin:[data;, ] // a, b, d
+```

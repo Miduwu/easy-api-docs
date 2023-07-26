@@ -1,0 +1,135 @@
+---
+sidebar_position: 2
+---
+
+# Tips
+Useful tips to improve your coding experience.
+
+## Handler
+Load the routes with a handler.
+### Example (Setup)
+```js
+import { API } from "easy-api.ts";
+
+const api = new API({...});
+
+api.load("./routes").then(() => {
+    api.connect({ port: 3000 }); // We're starting the API when the source is ready.
+});
+```
+### Example (Route)
+```js
+// path: './routes/../../../route.js'
+module.exports["route"] = {
+    url: '/endpoint/name',
+    method: "GET",
+    code: `
+        $response:[
+            $setCode:[200]
+            $setType:[JSON]
+            $setBody:[{
+                "success": true
+            }]
+        ]
+    `
+}
+```
+
+## Using Events
+Now API class can emit some extra events.
+```js
+import { API } from "easy-api.ts";
+
+const api = new API({...});
+
+// When the API is ready.
+api.on("ready", () => console.log("API ready!"));
+
+// When the API faces errors.
+api.on("error", (e) => console.log("Something internal went wrong!\n", e));
+
+// When a request is received
+api.on("request", (r) => console.log("New request!\n", r));
+```
+
+## Using a database
+Save, get and delete variables from the database, using the DatabaseManager.
+
+## Adding your own function
+Add your own function using the `<API>.interpreter` class.
+### Example
+```js
+import { API, Func, EATS_Error } from "easy-api.ts";
+
+const api = new API({...});
+
+api.interpreter.functions.add({
+    data: new Func()
+    .setName('test'),
+    code: async (d, param1) => {
+        if(!param1) throw new EATS_Error('Invalid inside provided in: ' + d.func?.name, {});
+        return "" // Function return must be a string IN EVERY CASE, if no return needed you can skip this line.
+    }
+});
+
+api.connect({ port: 3000 });
+
+```
+
+## Using callbacks
+The callbacks are callable functions using the EA.TS interpreter, (custom functions)
+> Access to the parameters using: `$param[INDEX]`
+
+### Example
+```js
+$function: [throwError;
+    $response:[
+        $setCode:[$param[0]]
+        $setType:[JSON]
+        $setBody:[{
+            "status": "$param[0]",
+            "error": "$param[1]"
+        }]
+    ]
+    $break
+]
+
+$if:[$query:[hi]==null;
+    $call:[throwError;400;Missing parameter: 'hi']
+]
+
+$response:[
+    $setCode:[200]
+    $setType:[JSON]
+    $setBody:[{}]
+]
+```
+
+## Reverse Reading
+esy-api.ts can read from top to bottom and bottom to top, to switch between reading modes, use the constructor options.
+```js
+import { API } from "easy-api.ts";
+
+const api = new API({
+    reverse: true // Now is reading from bottom to top.
+});
+
+```
+
+## Using Escapers
+### How does "escapers" work?
+Those 'variables/escapers' will be replaced in our code to the specified value, like so: `@semi` => `;`
+In aoi.js they are defined like: `#ANYTHING#`
+### Example
+```
+@semi) => ;)
+```
+### List
+| Symbol       | Replacement |
+| ------------ | ----------- |
+| **@left**    | ]           |
+| **@right**   | [           |
+| **@semi**    | ;           |
+| **@colon**   | :           |
+| **@space**   |             |
+| **@at**      | @           |

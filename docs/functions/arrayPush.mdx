@@ -1,0 +1,19 @@
+# $arrayPush
+Pushes a element to the provided array.
+
+## Usage
+> `$arrayExists:[name;match]`
+
+## Fields
+| Name    | Description          | Type   | Level    |
+| ------- | -------------------- | ------ | -------- |
+| name    | The array name.      | String | Required |
+| element | The element to push. | String | Required |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayJoin:[data;, ] // a, b, c, d
+$arrayPush:[data;e]
+$arrayJoin:[data;, ] // a, b, c, d, e
+```

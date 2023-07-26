@@ -1,0 +1,18 @@
+# $arrayJoin
+Joins the array with provided separator.
+
+## Usage
+> `$arrayJoin:[name;separator?]`
+
+## Fields
+| Name      | Description            | Type   | Level    |
+| --------- | ---------------------- | ------ | -------- |
+| name      | The array name.        | String | Required |
+| separator | The element separator. | String | Optional |
+
+## Example
+```js
+$newArray:[data;a,b,c,d;,]
+$arrayFindIndex:[data;d] // 4
+$arrayFindIndex:[data;mango] // -1 (Doesn't exists)
+```
