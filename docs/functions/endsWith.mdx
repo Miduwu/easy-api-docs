@@ -1,0 +1,16 @@
+# $endsWith
+Returns whether the given text ends with the provided word.
+
+## Usage
+> `$endsWith: [text;word]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| text  | The text to analyze.  | String | Required |
+| match | The word to check.    | String | Required |
+
+## Example
+```js
+$endsWith:[Hi world, from eats;eats] // true
+```

@@ -1,0 +1,18 @@
+# $replaceWithRegex
+Replace something in the text using regular expressions.
+
+## Usage
+> `$replaceWithRegex:[text;regexp;flag;replacer]`
+
+## Fields
+| Name     | Description               | Type   | Level    |
+| -------- | ------------------------- | ------ | -------- |
+| text     | The text to work on.      | String | Required |
+| regexp   | The regular expression.   | String | Required |
+| flags    | Regular expression flags. | String | Required |
+| replacer | The replacer word.        | String | Required |
+
+## Example
+```js
+$replaceWithRegex:[Hello, I gotta go.;/Hello/;g;Bye] // Bye, I gotta go.
+```

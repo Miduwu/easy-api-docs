@@ -1,0 +1,18 @@
+# $typeof
+Returns the type of the function inside.
+
+## Usage
+> `$typeof:[text]`
+
+## Fields
+| Name  | Description                         | Type   | Level    |
+| ----- | ----------------------------------- | ------ | -------- |
+| text  | The text to parse and get its type. | String | Required |
+
+## Example
+```js
+$typeof:[hi] // string
+$typeof:[4] // number
+$typeof:[{ "message": true }] // object
+$typeof:[["1", "2", "3"]] // array
+```

@@ -1,0 +1,18 @@
+# $objectHas
+Checks if an object exists or not.
+
+## Usage
+> `$objectHas: [name;property path]`
+
+## Fields
+| Name          | Description        | Type   | Level    |
+| ------------- | ------------------ | ------ | -------- |
+| name          | The object name.   | String | Required |
+| property path | The property path. | String | Required |
+
+## Example
+```js
+$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": 10 }]
+$objectHas:[data;Apple] // true
+$objectHas:[data;Apple[0].name] // false
+```

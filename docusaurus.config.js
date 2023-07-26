@@ -76,10 +76,10 @@ const config = {
       respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'easy-api.ts',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'ea.ts logo',
+          src: 'img/eats.png',
         },
         items: [
           {
@@ -89,7 +89,7 @@ const config = {
             label: 'Home',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Miduwu/easy-api-docs',
             label: 'GitHub',
             position: 'right',
           },
@@ -111,16 +111,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://discordapp.com/invite/fc6n37dCgY',
               },
             ],
           },
@@ -129,7 +121,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Miduwu/easy-api-docs',
               },
             ],
           },

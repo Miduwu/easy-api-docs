@@ -1,0 +1,17 @@
+# $replaceText
+Replaces the matched text with the provided replacement.
+
+## Usage
+> `$replaceText: [text;match;replacer]`
+
+## Fields
+| Name    | Description           | Type   | Level    |
+| ------- | --------------------- | ------ | -------- |
+| text    | The text to work on.  | String | Required |
+| match   | The word to replace.  | String | Required |
+| replacer | The replacer word.   | String | Required |
+
+## Example
+```js
+$replaceText:[Hello, I gotta go.;Hello;Bye] // Bye, I gotta go.
+```

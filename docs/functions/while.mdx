@@ -1,0 +1,24 @@
+# $while
+Executes a while statement.
+
+## Usage
+> `$while:[condition;code;separator?]`
+
+## Fields
+| Name        | Description                               | Type   | Level    |
+| ----------- | ----------------------------------------- | ------ | -------- |
+| condition   | Condition to check.                       | String | Required |
+| code        | Code to execute when condition is met.    | String | Required |
+| separator   | Separator for the while results.          | String | Optional |
+
+## Example
+```js
+$set:[i;0]
+$newArray:[numbers;0]
+$while:[$get:[i]<11;
+    $set:[i;$calculate:[$get:[i] + 1]]
+    $arrayPush:[numbers;$get:[i]]
+    $log:[INDEX: $get:[i]]
+]
+$arrayJoin:[numbers;,] // 0,1,2,3,4,5,6,7,8,9,10
+```

@@ -1,0 +1,22 @@
+# $writeFile
+Replaces any content in the provided file.
+
+## Usage
+> `$writeFile: [path;content]`
+
+## Fields
+| Name        | Description                               | Type   | Level    |
+| ----------- | ----------------------------------------- | ------ | -------- |
+| path        | File path.                                | String | Required |
+| content     | Content to write into the file.           | String | Required |
+
+## Example
+```yaml
+$if:[$fileExists:[./file.txt];
+    $set:[content;$readFile:[./file.txt]]
+    $log:[OLD CONTENT: $get:[content]] // Hello, good morning!
+    $writeFile:[./file.txt;Hi, good night!]
+    $set:[content;$readFile:[./file.txt]]
+    $log:[NEW CONTENT: $get:[content]] // Hi, good night!
+]
+```

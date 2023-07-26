@@ -1,0 +1,21 @@
+# $ram
+Returns how many RAM the system is using.
+
+## Usage
+> `$ram:[type?;decimals?]`
+
+## Fields
+| Name     | Description                              | Type   | Level    |
+| -------- | ---------------------------------------- | ------ | -------- |
+| type     | Memory type.                             | String | Optional |
+| decimals | How many decimals for the return number. | Number | Optional |
+
+## Memory Types
+- `KB`: Return the RAM used in Kilobytes.
+- `MB`: Return the RAM used in Megabytes.
+- `GB`: Return the RAM used in Gigabytes.
+
+## Example
+```js
+$ram:[MB;2] // 44.22
+```

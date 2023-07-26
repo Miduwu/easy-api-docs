@@ -1,0 +1,17 @@
+# $objectValues
+Joins object values.
+
+## Usage
+> `$objectValues:[name;sep?]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| name  | The object name.      | String | Required |
+| sep   | Values separator.     | String | Optional |
+
+## Example
+```js
+$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": "10" }]
+$objectValues:[data;-] // 5-7-10
+```

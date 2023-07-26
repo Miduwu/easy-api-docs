@@ -1,0 +1,16 @@
+# $getObject
+Gets a previously created object.
+
+## Usage
+> `$getObject:[name]`
+
+## Fields
+| Name | Description      | Type   | Level    |
+| ---- | ---------------- | ------ | -------- |
+| name | The object name. | String | Required |
+
+## Example
+```js
+$newObject:[data;{ "message": "hi" }]
+$getObject:[data] // {"message":"hi"}
+```

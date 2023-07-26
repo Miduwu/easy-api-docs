@@ -1,0 +1,24 @@
+# $date
+Get the date in the specified format.
+
+## Usage
+> `$date:[type]`
+
+## Fields
+| Name         | Description | Type   | Level    |
+| -----------  | ----------- | ------ | -------- |
+| type         | Date type.  | String | Required |
+
+## Date types
+- `now`: Return the UNIX time since 1970.
+- `year`: Return the current year.
+- `day`: Returns the current day.
+- `month`: Returns the current month.
+- `minutes`: Returns the current minute.
+- `seconds`: Returns the current second.
+- `hours`: Returns the current hour.
+
+## Example
+```js
+$date:[year] // 2023
+```

@@ -1,0 +1,18 @@
+# $objectDelete
+Deletes a object from the interpreter data.
+
+## Usage
+> `$objectDelete:[name]`
+
+## Fields
+| Name  | Description      | Type   | Level    |
+| ----- | ---------------- | ------ | -------- |
+| name  | The object name. | String | Required |
+
+## Example
+```js
+$newObject:[data;{ "message": "hi" }]
+$getObject:[data] // {"message":"hi"}
+$objectDelete:[data]
+$getObject:[data] // throws an error.
+```

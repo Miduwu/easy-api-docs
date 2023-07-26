@@ -1,0 +1,18 @@
+# $delete
+Deletes a environment variable.
+
+## Usage
+> `$delete:[name]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| name  | Variable name.        | String | Required |
+
+## Example
+```js
+$set:[i;0]
+$get:[i] // 0
+$delete:[i]
+$get:[i] // undefined
+```

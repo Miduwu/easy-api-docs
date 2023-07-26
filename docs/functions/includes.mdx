@@ -1,0 +1,16 @@
+# includes
+Returns whether the provided string contains some of the given words.
+
+## Usage
+> `$includes:[text;...words]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| text  | The text to analyze.  | String | Required |
+| words | The words to check.   | String | Required |
+
+```js
+$set:[sentence;a Pedro Picapiedra le gusta picar.]
+$includes:[$get:[sentence];mango;dog] // false
+```

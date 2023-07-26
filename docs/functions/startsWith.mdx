@@ -1,0 +1,16 @@
+# $startsWith
+Returns whether the given text starts with the provided word.
+
+## Usage
+> `$startsWith: [text;word]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| text  | The text to analyze.  | String | Required |
+| match | The word to check.    | String | Required |
+
+## Example
+```js
+$startsWith:[Hi world, from eats;eats] // false
+```

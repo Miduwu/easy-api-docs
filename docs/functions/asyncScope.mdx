@@ -1,0 +1,35 @@
+# $asyncScope
+Executes a code field inside a different data scope.
+
+## Usage
+> `$asyncScope: [code]`
+
+## Fields
+| Name | Description          | Type   | Level    |
+| ---- | -------------------- | ------ | -------- |
+| code | The code to execute. | String | Required |
+
+## Subfunctions
+### $return
+Returns the result of the scope.
+
+**Usage**
+
+> `$return:[text]`
+
+**Fields**
+
+| Name | Description          | Type   | Level    |
+| ---- | -------------------- | ------ | -------- |
+| text | The text to return.  | String | Required |
+
+## Example
+```js
+$set:[number;
+    $asyncScope: [
+        $set:[number;$randomNumber:[1;99]]
+        $return:[$get:[number]]
+    ]
+]
+$get:[number] // 99
+```

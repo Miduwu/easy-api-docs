@@ -1,0 +1,29 @@
+# $try
+Tries to execute a code, if the execution fails, a catch code will be executed.
+
+## Usage
+> `$try:[code;catch code;finally code]`
+
+## Fields
+| Name         | Description                         | Type   | Level    |
+| ------------ | ----------------------------------- | ------ | -------- |
+| code         | Code to try to execute.             | String | Required |
+| catch code   | Code to execute if main code fails. | String | Required |
+| finally code | Code to execute finally.            | String | Required |
+
+:::info
+
+To get the error message use: `$error`.
+
+:::
+
+## Example
+```js
+$try: [
+    $log
+;
+    $log: [EXECUTION FAILED WITH: $error]
+;
+    $log: [FINALLY CODE]
+]
+```

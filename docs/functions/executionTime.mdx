@@ -1,0 +1,14 @@
+# $executionTime
+Returns the execution time of the code.
+
+## Usage
+> `$executionTime`
+
+## Example
+```yaml
+$httpRequest:[https://api.munlai.me/json/binary?body=hi]
+$if: [$httpStatus==200;
+    $log:[$httpResult:[data]] // 0110100001101001
+]
+$log:[$executionTime ms] // 90 ms
+```

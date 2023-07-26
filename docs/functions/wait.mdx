@@ -1,0 +1,17 @@
+# $wait
+Waits certain time for execute code.
+
+## Usage
+> `$while:[condition;code;separator?]`
+
+## Fields
+| Name        | Description                               | Type   | Level    |
+| ----------- | ----------------------------------------- | ------ | -------- |
+| time        | Time to wait.                             | String | Required |
+
+## Example
+```js
+$log:[Please wait 5s...]
+$wait:[5s]
+$log:[Process done!]
+```

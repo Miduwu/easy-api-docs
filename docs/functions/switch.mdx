@@ -1,0 +1,53 @@
+# $switch
+Executes a switch statement.
+
+## Usage
+> `$switch:[reference;cases]`
+
+## Fields
+| Name        | Description                        | Type   | Level    |
+| ----------- | ---------------------------------- | ------ | -------- |
+| reference   | Reference to switch between cases. | String | Required |
+| cases       | Cases to execute. (Subfunctions)   | String | Required |
+
+## Subfunctions
+### $case
+Set a switch case.
+
+**Usage**
+> `$case:[name;code]`
+
+**Fields**
+
+| Name | Description          | Type   | Level    |
+| ---- | -------------------- | ------ | -------- |
+| name | The case name.       | String | Required |
+| code | The code to execute. | String | Required |
+
+### $default
+Set a default switch case.
+
+**Usage**
+> `$default:[code]`
+
+**Fields**
+
+| Name | Description          | Type   | Level    |
+| ---- | -------------------- | ------ | -------- |
+| code | The code to execute. | String | Required |
+
+## Example
+```js
+$set: [word;bed]
+$switch: [$get:[word];
+    $case: [lamp;
+        $log: [LAMP_CASE]
+    ]
+    $case: [bed;
+        $log: [BED_CASE]
+    ]
+    $default: [
+        $log: [DEFAULT_CASE]
+    ]
+] // BED_CASE
+```

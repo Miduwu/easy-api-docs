@@ -1,0 +1,13 @@
+# $httpStatus
+Retrieves HTTP request status.
+
+## Usage
+> `$httpStatus`
+
+## Example
+```yaml
+$httpRequest:[https://api.munlai.me/json/binary?body=hi]
+$if: [$httpStatus==200;
+    $log:[$httpResult:[data]] // 0110100001101001
+]
+```

@@ -1,0 +1,23 @@
+# $function
+Creates a custom function. (callback)
+
+## Usage
+> `$function:[name;code]`
+
+## Fields
+| Name       | Description              | Type   | Level    |
+| ---------- | ------------------------ | ------ | -------- |
+| name       | The callback name.       | String | Required |
+| code       | The code to be executed. | String | Required |
+
+:::info
+
+To get each param use: `$param[INDEX]`
+
+:::
+
+## Example
+```js
+$function: [log_message;$log:[$param[0]]]
+$call:[log_message;Hello world!] // Hello world!
+```

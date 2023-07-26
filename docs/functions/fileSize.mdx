@@ -1,0 +1,16 @@
+# $fileSize
+Returns the file size, if the file exists.
+
+## Usage
+> `$fileSize: [path;decimals?]`
+
+## Fields
+| Name        | Description                               | Type   | Level    |
+| ----------- | ----------------------------------------- | ------ | -------- |
+| path        | File path.                                | String | Required |
+| decimals    | File size decimals.                       | Number | Optional |
+
+## Example
+```yaml
+$fileSize:[./file.txt;2] // 1.02
+```

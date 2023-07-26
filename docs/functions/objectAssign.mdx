@@ -1,0 +1,18 @@
+# $objectAssign
+Assign objects to a base object.
+
+## Usage
+> `$objectAssign:[name;...objects]`
+
+## Fields
+| Name          | Description            | Type   | Level    |
+| ------------- | ---------------------- | ------ | -------- |
+| name          | The object name.       | String | Required |
+| objects       | The objects to assign. | String | Required |
+
+## Example
+```js
+$newObject:[data;{"main": "hi"}]
+$objectAssign:[data;{"eats": "A string package to create APIs with ease."};{"bdjs": "A string package to create bots with ease."}]
+$getObject: [data] // {"main": "hi","eats": "A string package to create APIs with ease.","bdjs": "A string package to create bots with ease."}
+```

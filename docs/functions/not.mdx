@@ -1,0 +1,19 @@
+# $not
+Returns if a value is falsy.
+
+## Usage
+> `$and:[value]`
+
+## Fields
+| Name        | Description          | Type   | Level    |
+| ----------- | -------------------- | ------ | -------- |
+| value       | Value to check.      | String | Required |
+
+## Example
+```js
+$not:[null] // true
+$not:[undefined] // true
+$not:[false] // true
+$not:[true] // false
+$not:[a] // false
+```

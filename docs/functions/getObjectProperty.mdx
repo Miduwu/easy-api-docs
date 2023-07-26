@@ -1,0 +1,17 @@
+# $getObjectProperty
+Get a property from a object.
+
+## Usage
+> `$getObjectProperty:[name;property path]`
+
+## Fields
+| Name          | Description        | Type   | Level    |
+| ------------- | ------------------ | ------ | -------- |
+| name          | The object name.   | String | Required |
+| property path | The property path. | String | Required |
+
+## Example
+```js
+$newObject:[data;{ "message": "hi", "props": [{ "name": "CGX" }, { "name": "Mid" }] }]
+$getObjectProperty:[data;props[1].name] // Mid
+```

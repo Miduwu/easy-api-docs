@@ -1,0 +1,21 @@
+# $if
+Executes a code field if the given condition is met.
+
+## Usage
+> `$if: [condition;then;else?]`
+
+## Fields
+| Name        | Description                               | Type   | Level    |
+| ----------- | ----------------------------------------- | ------ | -------- |
+| condition   | Condition to check.                       | String | Required |
+| then        | Code to execute when condition is met.    | String | Required |
+| else        | Code to execute when condition isn't met. | String | Optional |
+
+## Example
+```js
+$if: [true;
+    $log: [EXECUTED: THEN CODE]
+;
+    $log: [EXECUTED: FALSE CODE]
+]
+```

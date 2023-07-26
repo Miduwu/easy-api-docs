@@ -1,0 +1,35 @@
+# $httpRequest
+Makes an HTTP request.
+
+## Usage
+> `$httpRequest: [url;config?]`
+
+## Fields
+| Name        | Description                               | Type               | Level    |
+| ----------- | ----------------------------------------- | ------------------ | -------- |
+| url         | URL to request.                           | String             | Required |
+| config      | Configuration object.                     | AxiosRequestConfig | Optional | 
+
+:::info
+
+Look at AxiosRequestConfig by clicking [here](https://axios-http.com/docs/req_config)
+
+:::
+
+## Example
+```yaml
+// Without config body.
+$httpRequest:[https://api.munlai.me/json/binary?body=hi]
+
+// With config body.
+$httpRequest:[https://api.munlai.me/json/binary;{
+    params: {
+        body: 'hi'
+    },
+    logError: true,
+    headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+    },
+    method: 'get'
+}]
+```

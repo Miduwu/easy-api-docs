@@ -1,0 +1,28 @@
+# $objectEntries
+Get a object entries.
+
+## Usage
+> `$objectEntries:[name;text;sep?]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| name  | The object name.      | String | Required |
+| text  | The text to generate. | String | Required |
+| sep   | The element separator | String | Optional |
+
+:::info
+
+To get the object key use: `$objectKey`, to get the value use: `$objectValue`.
+
+:::
+
+## Example
+```js
+$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": 10 }]
+$set:[messages;$objectEntries:[data;This $objectKey costs $objectValue cents.;-]]
+$newArray:[messages;$get:[messages];-]
+$arrayForEach:[messages;
+    $log:[$element] // This Apple costs 5 cents. | This Banana costs 7 cents. | This Mango costs 10 cents.
+]
+```

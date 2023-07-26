@@ -1,0 +1,17 @@
+# $objectKeys
+Joins object keys.
+
+## Usage
+> `$objectKeys:[name;sep?]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| name  | The object name.      | String | Required |
+| sep   | Keys separator.       | String | Optional |
+
+## Example
+```js
+$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": "10" }]
+$objectKeys:[data;-] // Apple-Banana-Mango
+```

@@ -1,0 +1,22 @@
+# $eval
+Evals a code.
+
+## Usage
+> `$eval:[type;return?;code]`
+
+## Fields
+| Name   | Description            | Type    | Level    |
+| ------ | ---------------------- | ------- | -------- |
+| type   | Eval type.             | String  | Required |
+| return | Return the result?     | Boolean | Required |
+| code   | The code to be evaled. | String  | Required |
+
+## Eval types
+- `js`: Evals JavaScript code.
+- `eats`: Evals ea.ts code.
+
+## Example
+```js
+$eval:[js;false;console.log("hi")] // hi
+$eval:[eats;false;$log:[hi]] // hi
+```

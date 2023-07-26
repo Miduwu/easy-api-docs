@@ -1,0 +1,18 @@
+# $ternary
+Executes a ternary statement.
+
+## Usage
+> `$ternary: [condition;then;else]`
+
+## Fields
+| Name        | Description                               | Type   | Level    |
+| ----------- | ----------------------------------------- | ------ | -------- |
+| condition   | Condition to check.                       | String | Required |
+| then        | Text to return when condition is met.     | String | Required |
+| else        | Text to return when condition isn't met.  | String | Required |
+
+
+## Example
+```js
+$ternary:[1==1;This is true;This is false] // This is true
+```

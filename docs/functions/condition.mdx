@@ -1,0 +1,16 @@
+# $condition
+Parses a condition, returns true or false.
+
+## Usage
+> `$condition:[condition]`
+
+## Fields
+| Name        | Description          | Type   | Level    |
+| ----------- | -------------------- | ------ | -------- |
+| condition   | Condition to check.  | String | Required |
+
+## Example
+```js
+$condition: [1>2] // false
+$condition: [1<2] // true
+```

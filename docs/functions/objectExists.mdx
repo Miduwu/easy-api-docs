@@ -1,0 +1,17 @@
+# $objectExists
+Checks if an object exists or not.
+
+## Usage
+> `$objectExists:[name]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| name  | The object name.      | String | Required |
+
+## Example
+```js
+$objectExists:[data] // false
+$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": 10 }]
+$objectExists:[data] // true
+```

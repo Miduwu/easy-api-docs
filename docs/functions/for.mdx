@@ -1,0 +1,27 @@
+# $for
+For statement.
+
+## Usage
+> `$for: [initialization;condition;type;code;separator?]`
+
+## Fields
+| Name           | Description                             | Type   | Level    |
+| -------------- | --------------------------------------- | ------ | -------- |
+| initialization | The variable for initialization.        | Number | Required |
+| condition      | The condition to keep iterating.        | String | Required |
+| type           | Iteration type.                         | String | Required |
+| code           | The code to execute for each iteration. | String | Required |
+| separator      | Result separator.                       | String | Optional |
+
+## Iteration types
+- increment: Increments the variable value.
+- decrement: Decrements the variable value.
+
+## Example
+```js
+$set:[i;0]
+$for:[$get:[i];$get:[i]<11;increment;
+    $log: [INDEX: $get:[i]]
+    $set: [i;$calculate: [$get:[i] + 1]]
+]
+```

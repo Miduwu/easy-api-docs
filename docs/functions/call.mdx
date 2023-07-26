@@ -1,0 +1,17 @@
+# $call
+Calls a previously created custom function. (callback)
+
+## Usage
+> `$call:[name;...params]`
+
+## Fields
+| Name       | Description          | Type   | Level    |
+| ---------- | -------------------- | ------ | -------- |
+| name       | The callback name.   | String | Required |
+| params     | Callback params.     | String | Required |
+
+## Example
+```js
+$function: [log_message;$log:[$param[0]]] // Required to use $call
+$call:[log_message;Hello world!] // Hello world!
+```

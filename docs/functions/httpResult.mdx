@@ -1,0 +1,16 @@
+# $httpResult
+Retrieves HTTP request results.
+
+## Usage
+> `$httpResult:[object paths]`
+
+## Fields
+| Name         | Description                                | Type   | Level    |
+| -----------  | ------------------------------------------ | ------ | -------- |
+| object paths | The paths to access the required property. | String | Required |
+
+## Example
+```yaml
+$httpRequest:[https://api.munlai.me/json/binary?body=hi]
+$httpResult:[data] // 0110100001101001
+```

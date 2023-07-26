@@ -1,0 +1,16 @@
+# $concat
+Concatenates the provided texts.
+
+## Usage
+> `$concat:[base;...texts]`
+
+## Fields
+| Name  | Description           | Type   | Level    |
+| ----- | --------------------- | ------ | -------- |
+| base  | The base text.        | String | Required |
+| texts | The texts. to concat. | String | Required |
+
+## Example
+```js
+$concat:[HI,; HOW; ARE; YOU?] // HI, HOW ARE YOU?
+```
