@@ -10,9 +10,9 @@ Deletes an array from the interpreter data.
 | name  | The array name.    | String | Required |
 
 ## Example
-```js
+```yaml
 $newArray:[data;a,b,c,d;,]
-$arrayAt:[data;3] // c
+$arrayAt:[data;3] # c
 $arrayDelete:[data]
-$arrayAt:[data;3] // throws an error.
+$arrayAt:[data;3] # throws an error.
 ```

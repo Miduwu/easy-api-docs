@@ -1,0 +1,25 @@
+# $setDimentions
+Set the canvas dimensions.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$setDimentions:[width;height]`
+
+## Fields
+| Name          | Description                       | Type	     | Level    |
+| ------------- | --------------------------------- | ---------- | -------- |
+| width         | The canvas width.                 | Number     | Required |
+| height        | The canvas height.      		    | Number     | Required |
+
+## Example
+```yaml
+$createCanvas: [
+	$setDimentions: [512;400]
+	# ...
+]
+```

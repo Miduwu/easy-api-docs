@@ -11,10 +11,10 @@ Executes a code field for each array element.
 | code  | The code to execute. | String | Required |
 
 ## Example
-```js
+```yaml
 $newArray:[data;a,b,c,d;,]
 $arrayForEach:[
-    $log:[CURRENT ELEMENT: $element] // This will log each element in the array.
+    $log:[CURRENT ELEMENT: $element] # This will log each element in the array.
 ]
 ```
 

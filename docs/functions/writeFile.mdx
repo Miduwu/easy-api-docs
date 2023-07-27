@@ -14,9 +14,9 @@ Replaces any content in the provided file.
 ```yaml
 $if:[$fileExists:[./file.txt];
     $set:[content;$readFile:[./file.txt]]
-    $log:[OLD CONTENT: $get:[content]] // Hello, good morning!
+    $log:[OLD CONTENT: $get:[content]] # Hello, good morning!
     $writeFile:[./file.txt;Hi, good night!]
     $set:[content;$readFile:[./file.txt]]
-    $log:[NEW CONTENT: $get:[content]] // Hi, good night!
+    $log:[NEW CONTENT: $get:[content]] # Hi, good night!
 ]
 ```

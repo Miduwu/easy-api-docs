@@ -1,0 +1,24 @@
+# $createCanvas
+Creates a canvas then edit it.
+
+## Usage
+> `$createCanvas:[data]`
+
+## Fields
+| Name        | Description                           | Type	   | Level    |
+| ----------- | ------------------------------------- | ---------- | -------- |
+| data        | The canvas code.                      | Executable | Required |
+
+## Example
+```yaml
+$createCanvas: [
+	$setDimensions:[512;512] # subfunction
+	$drawText:[...]
+]
+# Now we can send it
+$reply: [
+	$setCode: [200]
+	$setType: [canvas]
+	$setBody: [$default]
+]
+```

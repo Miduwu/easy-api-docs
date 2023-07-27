@@ -10,9 +10,9 @@ Checks whether at least one conditions is met.
 | conditions  | Conditions to check. | String | Required |
 
 ## Example
-```js
-$or: [1==0;2<1;0==0] // true
-$or: [1==0;2<1;0==1] // false
-$or: [undefined;null;1] // 1
-$or: [undefined;false;3>2;null] // true
+```yaml
+$or: [1==0;2<1;0==0] # true
+$or: [1==0;2<1;0==1] # false
+$or: [undefined;null;1] # 1
+$or: [undefined;false;3>2;null] # true
 ```

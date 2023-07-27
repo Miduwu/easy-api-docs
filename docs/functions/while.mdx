@@ -12,7 +12,7 @@ Executes a while statement.
 | separator   | Separator for the while results.          | String | Optional |
 
 ## Example
-```js
+```yaml
 $set:[i;0]
 $newArray:[numbers;0]
 $while:[$get:[i]<11;
@@ -20,5 +20,5 @@ $while:[$get:[i]<11;
     $arrayPush:[numbers;$get:[i]]
     $log:[INDEX: $get:[i]]
 ]
-$arrayJoin:[numbers;,] // 0,1,2,3,4,5,6,7,8,9,10
+$arrayJoin:[numbers;,] # 0,1,2,3,4,5,6,7,8,9,10
 ```

@@ -1,0 +1,29 @@
+# $drawRect
+Draws a rectangle.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$drawRect:[x;y;width;height;radius?]`
+
+## Fields
+| Name           | Description                       | Type	      | Level    |
+| -------------- | --------------------------------- | ---------- | -------- |
+| x              | The rect X coordinate position.   | Number     | Required |
+| y     	     | The rect Y coordinate position.   | Number     | Required |
+| wdith          | The rect width.	  				 | Number	  | Required |
+| height		 | The rect height.					 | Number     | Required |
+| radius		 | The rect radius (default 0).      | Number     | Optional |
+
+## Example
+```yaml
+$createCanvas: [
+	# ...
+	$drawRect: [0;0;512;512] # square
+	# ...
+]
+```

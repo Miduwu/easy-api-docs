@@ -37,7 +37,7 @@ Set a default switch case.
 | code | The code to execute. | String | Required |
 
 ## Example
-```js
+```yaml
 $set: [word;bed]
 $switch: [$get:[word];
     $case: [lamp;
@@ -49,5 +49,5 @@ $switch: [$get:[word];
     $default: [
         $log: [DEFAULT_CASE]
     ]
-] // BED_CASE
+] # BED_CASE
 ```

@@ -24,7 +24,7 @@ module.exports["route"] = {
     url: '/endpoint/name',
     method: "GET",
     code: `
-        $response:[
+        $reply:[
             $setCode:[200]
             $setType:[JSON]
             $setBody:[{
@@ -94,7 +94,7 @@ $function: [throwError;
     $break
 ]
 
-$if:[$query:[hi]==null;
+$if:[$not:[$query:[hi]];
     $call:[throwError;400;Missing parameter: 'hi']
 ]
 

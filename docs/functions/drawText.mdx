@@ -1,0 +1,31 @@
+# $drawText
+Draws a text box.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$drawText:[text;x;y;width;height;radius?]`
+
+## Fields
+| Name           | Description                       		| Type	    | Level    |
+| -------------- | ----------------------------------------	| --------- | -------- |
+| text			 | The text itself.					 		| String	| Required |
+| x              | The text X coordinate position. 	 		| Number	| Required |
+| y     	     | The text Y coordinate position.   		| Number	| Required |
+| wdith          | The text width.	  				 		| Number	| Required |
+| height		 | The text height.					 		| Number	| Required |
+| align 		 | The text align (default left).    		| String	| Required |
+| vAlign		 | The vertical text align (default top).	| String 	| Required |
+
+## Example
+```yaml
+$createCanvas: [
+	# ...
+	$drawText: [Hello;0;0;512;100;right;bottom]
+	# ...
+]
+```

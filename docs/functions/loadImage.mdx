@@ -1,0 +1,27 @@
+# $loadImage
+Loads an image.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$loadImage:[id;type;body]`
+
+## Fields
+| Name          | Description                       | Type	     | Level    |
+| ------------- | --------------------------------- | ---------- | -------- |
+| id            | The image ID (way to get it).     | String     | Required |
+| type          | The image type (url/path).  	    | String     | Required |
+| body          | The image path/url.				| String	 | Required |
+
+## Example
+```yaml
+$createCanvas: [
+	# ...
+	$loadImage: [myImage;url;https://images.com/image.png]
+	# ...
+]
+```

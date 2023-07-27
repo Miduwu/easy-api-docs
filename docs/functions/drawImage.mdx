@@ -1,0 +1,37 @@
+# $drawImage
+Draws a loaded image.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$drawImage:[id;x;y;width;height;radius?]`
+
+:::danger
+
+You have to use **[$loadImage](loadImage)** before using this function.
+
+:::
+
+## Fields
+| Name           | Description                       | Type	      | Level    |
+| -------------- | --------------------------------- | ---------- | -------- |
+| id			 | The loaded image ID.				 | String 	  | Required |
+| x              | The image X coordinate position.  | Number     | Required |
+| y     	     | The image Y coordinate position.  | Number     | Required |
+| wdith          | The image width.	  				 | Number	  | Required |
+| height		 | The image height.				 | Number     | Required |
+| radius		 | The image radius (default 0).     | Number     | Optional |
+
+## Example
+```yaml
+$createCanvas: [
+	# ...
+	$loadImage: [myImage;url;https://images.com/image.png] # required
+	$drawImage: [myImage;0;0;512;512]
+	# ...
+]
+```

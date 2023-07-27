@@ -11,7 +11,7 @@ Appends content to the end of the provided file.
 | content     | Content to append to the file.            | String | Required |
 
 ## Example
-```js
+```yaml
 $set:[content;Hiii, good morning!]
 $appendContent:[./file.txt;$get:[content]]
 ```

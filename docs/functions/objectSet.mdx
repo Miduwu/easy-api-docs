@@ -11,7 +11,7 @@ Set a property in the given object.
 | sep   | Values separator.     | String | Optional |
 
 ## Example
-```js
+```yaml
 $newObject:[data;{
     "moonlightgroup": {
         "packages": [{
@@ -26,5 +26,5 @@ $newObject:[data;{
 }]
 $objectSet:[data;moonlightgroup.members[0];Mid]
 $objectSet:[data;moonlightgroup.members[1];CGX]
-$getObject:[data] // {"moonlightgroup":{"packages":[{"name":"easy-api.ts","description":"A string package to create APIs with ease."},{"name":"erine","description":"A powerul command framework to create discord bots with ease."}],"members": ["Mid", "CGX"]}}
+$getObject:[data] # {"moonlightgroup":{"packages":[{"name":"easy-api.ts","description":"A string package to create APIs with ease."},{"name":"erine","description":"A powerul command framework to create discord bots with ease."}],"members": ["Mid", "CGX"]}}
 ```

@@ -24,12 +24,12 @@ Returns the result of the scope.
 | text | The text to return.  | String | Required |
 
 ## Example
-```js
+```yaml
 $set:[number;
     $scope: [
         $set:[number;$randomNumber:[1;99]]
         $return:[$get:[number]]
     ]
 ]
-$get:[number] // 99
+$get:[number] # 99
 ```

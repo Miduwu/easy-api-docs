@@ -10,9 +10,9 @@ Deletes a object from the interpreter data.
 | name  | The object name. | String | Required |
 
 ## Example
-```js
+```yaml
 $newObject:[data;{ "message": "hi" }]
-$getObject:[data] // {"message":"hi"}
+$getObject:[data] # {"message":"hi"}
 $objectDelete:[data]
-$getObject:[data] // throws an error.
+$getObject:[data] # throws an error.
 ```

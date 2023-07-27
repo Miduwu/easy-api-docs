@@ -11,8 +11,8 @@ Checks if an object exists or not.
 | property path | The property path. | String | Required |
 
 ## Example
-```js
-$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": 10 }]
-$objectHas:[data;Apple] // true
-$objectHas:[data;Apple[0].name] // false
+```yaml
+$newObject:[data;{ "Apple": "5", "Banana": "7", "Mango": "10" }]
+$objectHas:[data;Apple] # true
+$objectHas:[data;Apple[0].name] # false
 ```
