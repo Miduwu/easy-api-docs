@@ -1,0 +1,27 @@
+# $font
+Set the canvas font.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$font: [size;family?;style?]`
+
+## Fields
+| Name   | Description    | Type   | Level    |
+| ------ | -------------- | ------ | -------- |
+| size   | The font size. | Number | Required |
+| family | Font family.   | String | Optional |
+| style  | Font style.    | String | Optional |
+
+## Example
+```yaml
+$createCanvas: [
+    # ...
+    $font: [30;Arial;bold]
+    $drawText: [...] # This text will be 'bold 30px Arial'
+]
+```

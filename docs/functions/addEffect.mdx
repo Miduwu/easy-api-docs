@@ -1,0 +1,47 @@
+# $addEffect
+Apply an effect to the canvas context.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$addEffect: [effect;number]`
+
+## Fields
+| Name        | Type        | Description                            | Level    |
+| ----------- | ----------- | -------------------------------------- | -------- |
+| effect      | String      | The effect name to apply.              | Required |
+| number      | Number      | How many pixels/percentage.	         | Required |
+
+## Effects:
+- **`blur`** Applies a Gaussian blur to the drawing. A value of `0` leaves the input unchanged.
+- **`brightness`** Applies a linear multiplier to the drawing, making it appear brighter or darker. A value of `100` leaves the input unchanged.
+- **`contrast`** Adjusts the contrast of the drawing. A value of `100` leaves the drawing unchanged.
+- **`grayscale`** Converts the drawing to grayscale. A value of `100` is completely grayscale. A value of `0` leaves the drawing unchanged.
+- **`invert`** Inverts the drawing. A value of `100` means complete inversion. A value of `0` leaves the drawing unchanged.
+- **`saturate`** Saturates the drawing. A value of `0` means completely un-saturated. A value of `100` leaves the drawing unchanged.
+- **`sepia`** Converts the drawing to sepia. A value of `100` means completely sepia. A value of `0` leaves the drawing unchanged.
+
+:::info
+
+[`CanvasRenderingContext2D/filter`](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/filter)
+
+:::
+
+:::info
+
+💡: Remove the effect using [`$removeEffect`](removeEffect)
+
+:::
+
+## Example
+```yaml
+$createCanvas: [
+    # ...
+    $addEffect: [grayscale;50]
+    # ...
+]
+```

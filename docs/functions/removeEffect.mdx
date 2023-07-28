@@ -1,0 +1,18 @@
+# $removeEffect
+Remove the current canvas context.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Example
+```yaml
+$createCanvas: [
+    # ...
+    $addEffect: [blur;40]
+    # More things here...
+    $removeEffect
+]
+```

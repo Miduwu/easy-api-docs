@@ -1,0 +1,16 @@
+# $ignore
+Ignores code execution of function inside.
+
+## Usage
+> `$ignore: [text]`
+
+## Fields
+| Name | Description         | Type                 | Level    |
+| ---- | ------------------- | -------------------- | -------- |
+| text | The text to ignore. | String \| Executable | Required |
+
+## Example
+```yaml
+$ignore: [HIIIIII $set: [hi;BYEEEEE]] # This will not be executed.
+$set: [hi;HELLOOOOO]
+```

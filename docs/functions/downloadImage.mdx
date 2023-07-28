@@ -1,0 +1,26 @@
+# $downloadImage
+Downloads a image into your API files.
+
+:::caution
+
+This function __just can be used__ inside **[$createCanvas](createCanvas)**
+
+:::
+
+## Usage
+> `$downloadImage: [ID;path]`
+
+## Fields
+| Name  | Description                                                 | Type   | Level    |
+| ----- | ----------------------------------------------------------- | ------ | -------- |
+| ID    | The image id you saved with $loadImage.                     | String | Required |
+| path  | The path where the image will be saved with file extension. | String | Required |
+
+## Example
+```yaml
+$createCanvas: [
+    # ...
+    $loadImage: [image;link;$query: [avatar]]
+    $downloadImage: [image;$root: [assets;file.png]]
+]
+```
