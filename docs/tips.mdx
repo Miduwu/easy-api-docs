@@ -37,6 +37,12 @@ module.exports["route"] = {
 
 ## Using Events
 Now API class can emit some extra events.
+### Event Names
+- error
+- ready
+- request
+
+### Example
 ```js
 import { API } from "easy-api.ts";
 
@@ -52,8 +58,51 @@ api.on("error", (e) => console.log("Something internal went wrong!\n", e));
 api.on("request", (r) => console.log("New request!\n", r));
 ```
 
-## Using a database
+### Using Handler
+By using events with handler, you can execute ea.ts code for each emitted event.
+```js
+module.exports["event"] = {
+    name: "ready", // Event name,
+    code: `
+        $log: [API READY!]
+    `
+};
+```
+
+## Using a custom database
 Save, get and delete variables from the database, using the DatabaseManager.
+
+:::info
+
+[midb](https://npmjs.com/package/midb) is used as default database.
+
+:::
+
+```js
+const { API } = require("easy-api.ts");
+const { QuickDB } = require("quick.db");
+
+const api = new API(...);
+api.db["db"] = new QuickDB();
+
+api.route({
+    url: "/data",
+    method: "GET",
+    code: `
+        // Function usage can change depending of the usage of custom database methods.
+        $setVar: [user;CGX]
+        $reply: [
+            $setCode: [200]
+            $setType: [JSON]
+            $setBody: [{
+                user: "$getVar:[user]"
+            }]
+        ]
+    `
+});
+
+api.connect({ port: 5000 });
+```
 
 ## Adding your own function
 Add your own function using the `<API>.interpreter` class.
@@ -81,7 +130,7 @@ The callbacks are callable functions using the EA.TS interpreter, (custom functi
 > Access to the parameters using: `$param[INDEX]`
 
 ### Example
-```js
+```yaml
 $function: [throwError;
     $response:[
         $setCode:[$param[0]]

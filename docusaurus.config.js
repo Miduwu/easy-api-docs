@@ -43,8 +43,8 @@ const config = {
       announcementBar: {
           id: "join_us",
           content: 'Do you like easy-api.ts? Join our <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/dKhuDRW8dB">discord server</a>',
-          backgroundColor: "#E5F9E0",
-          textColor: "#091E42",
+          backgroundColor: "#7494ec",
+          textColor: "#FFFFFF",
           isCloseable: true
       },
       colorMode: {

@@ -1,0 +1,24 @@
+# $deleteVar
+Delete a variable using the database manager API.
+
+## Usage
+> `$deleteVar:[key;table?]`
+
+:::caution
+
+The shown usage corresponds to the default database, if you use a custom database, this can change, you should know how to use the chosen custom database.
+
+:::
+
+## Fields
+| Name | Description | Type | Level |
+| ----- | ----- | ---- | ---- |
+| name | The variable name. | String | Required |
+| table | The database table. | String | Optional |
+
+## Example
+```yaml
+$setVar: [number;12]
+$deleteVar: [number]
+$getVar: [number] # undefined / null / error
+```

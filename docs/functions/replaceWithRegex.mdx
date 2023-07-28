@@ -14,5 +14,6 @@ Replace something in the text using regular expressions.
 
 ## Example
 ```yaml
-$replaceWithRegex:[Hello, I gotta go.;/Hello/;g;Bye] # Bye, I gotta go.
+$set: [sample;Hola, me gustaría comer una hamburguesa triple carne, porfavor. uwu]
+$replaceWithRegex: [$replaceWithRegex: [$get: [sample];(R|L);g;W];(r|l);g;w] # Howa, me gustawía comew una hambuwguesa twiple cawne powfavow. uwu
 ```
