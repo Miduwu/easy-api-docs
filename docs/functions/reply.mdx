@@ -1,0 +1,79 @@
+# $reply
+Replies to the request.
+
+## Usage
+> `$reply: [childs...]`
+
+## Fields
+| Name   | Description                 | Type       |          |
+| ------ | --------------------------- | ---------- | -------- |
+| childs | Child functions to execute. | Executable | Required |
+
+## Child Functions
+### $setCode
+Set the reply status code.
+### Usage
+> `$setCode: [code]`
+### Fields
+| Name | Description              |        |          |
+| ---- | ------------------------ | ------ | -------- |
+| code | The request status code. | Number | Required |
+
+---
+
+### $setType
+Set the reply type.
+### Usage
+> `$setType: [type]`
+### Reply Types
+- canvas
+- file
+- json
+- other
+- redirect
+### Fields
+| Name | Description                    | Type                | Level    |
+| -----| ------------------------------ | ------------------- | -------- |
+| type | The [reply type](#reply-types) | String\<Reply Types\> | Required |
+
+---
+
+### $setBody
+Set the reply body.
+### Usage
+> `$setBody: [body | $default]`
+### Fields
+| Name | Description     | Type               |          |
+| ---- | --------------- | ------------------ | -------- |
+| body | The reply body. | String \| $default | Required |
+
+---
+
+## Example
+### Sending a JSON object.
+```yaml
+$reply: [
+    $setCode: [200]
+    $setType: [JSON]
+    $setBody: [{
+        "message": "Hello world!"
+    }]
+]
+```
+### Sending a canvas.
+```yaml
+$createCanvas: [...]
+$reply: [
+    $setCode: [200]
+    $setType: [canvas]
+    $setBody: [$default]
+]
+```
+### Sending a file.
+```yaml
+$reply: [
+    $setCode: [200]
+    $setType: [file]
+    $setBody: [$root: [./index.html]]
+]
+```

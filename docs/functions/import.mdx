@@ -1,0 +1,22 @@
+# $import
+Import something from a file.
+
+## Usage
+> `$import: [path;property?]`
+
+## Fields
+| Name     | Description             | Type   | Level    |
+| -------- | ----------------------- | ------ | -------- |
+| path     | The file path.          | String | Required |
+| property | The property to import. | String | Required |
+
+## Example
+```yaml
+# ./file.module.js
+# FILE CONTENT:
+# const object = {
+# name: "EASY-API.TS",
+# description: "A string package to create APIs with ease."
+# }
+$import: [./file.module.js;object.name] # EASY-API.TS
+```

@@ -1,0 +1,17 @@
+# $path
+Get a path parameter from the request.
+
+## Usage
+> `$path: [name]`
+
+## Fields
+| Name | Description         | Type | Level |
+| ---- | ------------------- | ---- | ----- |
+| name | The parameter name. | String | Required |
+
+## Example
+```yaml
+# URL => /ai/:type/:language
+$path: [type] # happy
+$path: [language] # es
+```

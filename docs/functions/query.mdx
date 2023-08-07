@@ -1,0 +1,16 @@
+# $query
+Get a query parameter from the request.
+
+## Usage
+> `$query: [name]`
+
+## Fields
+| Name | Description         |         |          |
+| ---- | ------------------- | ------- | -------- |
+| name | The parameter name. | String | Required |
+
+## Example
+```yaml
+# https://api.com?text=HOLA
+$query: [text] # HOLA
+```
