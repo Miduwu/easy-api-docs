@@ -2,6 +2,7 @@
 sidebar_position: 6
 ---
 
+# Escapers
 ## Using Escapers
 ### How does "escapers" work?
 Those 'variables/escapers' will be replaced in our code to the specified value, like so: `@semi` => `;`

@@ -33,9 +33,6 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="easy-api.ts documentation">
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
     </Layout>
   );
 }
