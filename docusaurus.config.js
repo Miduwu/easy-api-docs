@@ -9,7 +9,7 @@ const config = {
   title: 'easy-api.ts',
   tagline: 'APIs are cool.',
   favicon: 'img/eats.png',
-  url: 'https://eats-v3.akiracore.repl.co',
+  url: 'https://eats.munlai.me',
   baseUrl: '/',
   organizationName: 'Miduwu',
   projectName: 'easy-api-docs',
