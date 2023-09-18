@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbdjs=self.webpackChunkbdjs||[]).push([[2167],{9265:e=>{e.exports=JSON.parse('{"title":"Tips","description":"Improve your coding experience.","slug":"/category/tips","permalink":"/docs/category/tips","navigation":{"previous":{"title":"Tips","permalink":"/docs/old/tips"},"next":{"title":"Handler","permalink":"/docs/tips/handler"}}}')}}]);
