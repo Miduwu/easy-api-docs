@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbdjs=self.webpackChunkbdjs||[]).push([[706],{580:s=>{s.exports=JSON.parse('{"title":"Functions","description":"Function documentation.","slug":"/category/functions","permalink":"/docs/category/functions","navigation":{"previous":{"title":"easy-api.ts","permalink":"/docs/home"},"next":{"title":"$abs","permalink":"/docs/functions/abs"}}}')}}]);
