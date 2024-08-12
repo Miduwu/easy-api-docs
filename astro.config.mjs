@@ -8,9 +8,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'easy-api.ts',
-			favicon: './public/eats.png',
+			
+			favicon: './src/assets/eats.png',
 			logo: {
-				src: './public/eats.png'
+				src: './src/assets/eats.png'
 			},
 			social: {
 				discord: 'https://discord.com/invite/dKhuDRW8dB',
