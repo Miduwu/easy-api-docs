@@ -4,9 +4,9 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://eats.munlai.me',
 	integrations: [
 		starlight({
-			site: 'https://eats.munlai.me',
 			title: 'easy-api.ts',
 			favicon: './public/eats.png',
 			logo: {
