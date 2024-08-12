@@ -1,0 +1,74 @@
+---
+title: Add-ons
+description: A pretty explained guide on how to make your own add-ons.
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+
+**Add-ons** are the best way to extend **easy-api.ts** capabilities
+by bringing an easy-to-understand API.
+
+## Placing the add-on
+You must place **add-on** files some where. Let's look an example.
+<FileTree>
+- index.js Your API **main file**
+- my_custom_addon
+  - functions
+    - betterLog.js
+  - **index.js**
+- routes
+  - hello.js
+- package.json
+</FileTree>
+
+## Creating your add-on
+To create an **add-on**, you must require the `Addon` class in
+order to extend it and add custom functionality.
+```js
+// /my_custom_addon/index.js
+var { Addon } = require("easy-api.ts");
+
+module.exports = class MyCustomAddon extends Addon {
+    name = "myCustomAddon"; // Set the name of your add-on.
+    description = "..."; // A brief description about your add-on.
+    version = "1.0.0"; // The version of your addon.
+    // ^ all these properties are required.
+
+    /**
+     * Starts the addon "init" protocol.
+     * @param {import("easy-api.ts").API} api
+     * @returns {void}
+    */
+    init(api) {
+        // Logic here...
+    }
+};
+```
+:::tip[Tip]
+To load custom functions that your **add-on can include**,
+use the `<API>.functions.load` method.
+```js
+init(api) {
+    api.functions.load(__dirname + "/functions");
+}
+```
+:::
+
+Now, let's attach the **add-on** into the API.
+```js
+// /index.js
+var MyCustomAddon = require("./my_custom_addon");
+var { API } = require("easy-api.ts");
+
+var api = new API({
+    addons: [
+        new MyCustomAddon(),
+    ],
+    dots: false,
+    reverse: false
+});
+
+// ...
+```
+**Congratulations!** You've done the basic logic for
+your first add-on.

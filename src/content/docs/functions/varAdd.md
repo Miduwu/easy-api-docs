@@ -1,0 +1,19 @@
+---
+title: $varAdd
+description: Shorthand for $var[...;$calculate[$get[...] + $get[...]]].
+---
+
+Shorthand for $var[...;$calculate[$get[...] + $get[...]]].
+## Parameters
+|  Name  |             Description             | Enforced | Default Value |
+|--------|-------------------------------------|----------|---------------|
+| Name   | Variable name.                      | Yes      | None          |
+| Amount | Amount to be added to the variable. | Yes      | None          |
+## Example
+```
+$varAdd[name;amount]
+```
+## Function Aliases
+- $varSum
+- $letSum
+- $setSum

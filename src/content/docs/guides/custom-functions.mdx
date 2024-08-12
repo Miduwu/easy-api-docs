@@ -1,0 +1,217 @@
+---
+title: Custom Functions
+description: Learn to make your own custom functions using this guide.
+---
+
+**easy-api.ts** lets you add custom functionality to the library,
+that's why creating custom functions is a thing.
+
+## Creating your first custom function
+We need to require the following classes and enums from the library.
+```js
+var { APIFunction, ParamType } = require("easy-api.ts");
+```
+Now, let's extend the `APIFunction` class.
+We will make an `owoify` function for this example.
+```js
+class AnyName extends APIFunction {
+    name = "owoify";
+    description = "Owoifies a message.";
+    parameters = [{
+        name: "Message",
+        description: "The message to be owoified.",
+        type: ParamType.String,
+        required: true,
+        rest: false,
+        defaultValue: null
+    }]; // It's important to fill this array if your function has parameters.
+    usage = "$owoify[message]";
+    returns = ParamType.String;
+    compile = true;
+    aliases = [];
+    async run(d, [message]) {
+        return message.replace(
+            /[rl]/gi,
+            (match) => /[RL]/.test(match) ? "W" : "w"
+        );
+    }
+};
+```
+
+Now, let's export your custom function.
+```js
+exports.default = AnyName;
+```
+
+## Loading your custom function
+To load your custom function, you can use the `load` method of the function manager.
+```js
+// /index.js
+var api = new API(...);
+
+api.functions.load("<path to function>");
+```
+
+import { Badge } from '@astrojs/starlight/components';
+
+## Scoped-functions <Badge text="Advanced" variant="danger" size="small" />
+Scoped-functions are functions that can be executed in certain function scopes.
+This is appliable for `$case` and `$switch` or canvas functions.
+
+This is an easy-to-understand concept, but first,
+we need to comprehend what an scope is.
+### Understanding scopes
+**"Scopes"** refer to the contexts in which variables are accessible.
+Let's define a global variable.
+```
+$let[myAwesomeVar;13]
+```
+You can access this variable in the whole code.
+```
+$if[$get[myAwesomeVar;...]]
+$createCanvas[
+    $setDimensions[12;32]
+    $switch[7;
+        $case[$get[myAwesomeVar];...]
+    ]
+]
+```
+
+You change the value of a variable in a child scope and it will updated in the parent scope.
+```
+$let[myAwesomeVar;13]
+^ now var is "13".
+
+$createCanvas[
+    $setDimensions[12;32]
+    $let[myAwesomeVar;32]
+    ^ now var is "32".
+]
+
+$get[myAwesomeVar]
+^ var is still "32".
+```
+Now, let's define an scoped variable.
+```
+$let[myAwesomeVar;13]
+^ now var is "13".
+
+$scope[
+    $let[idx;16]
+    ^ now var is "16".
+
+    $let[idx;24]
+    ^ now var is "24".
+;true]
+
+$get[idx]
+^ ERROR: undefined variable.
+
+$get[myAwesomeVar]
+^ returns: "13".
+```
+Some functions can't inherit data from parent scopes.
+
+### Creating the parent function
+You can follow the existing guide for this step in **"Creating your first custom function"**.
+```js
+// /functions/map.js
+const { API, APIFunction, Data, ParamType, Util } = require("easy-api.ts");
+
+exports.default = class ParentFunc extends APIFunction {
+    name = "$map";
+    description = "Maps the given numbers and load the results to a variable.";
+    parameters = [{
+        name: "Numbers",
+        description: "Numbers separated by commas.",
+        type: ParamType.Number,
+        required: true,
+        rest: false,
+        defaultValue: null
+    },{
+        name: "Code",
+        description: "Code to be applied to each number.",
+        type: ParamType.String,
+        required: true,
+        rest: false,
+        defaultValue: null
+    }]
+    usage = "$map[3,6,9,12;$load[uwu;%element%]]"
+    compile = false // Important to set to false.
+    aliases = []
+    async run(d, [numbers, code]) {
+        /**
+         * We are extending Data to create a sub-data and attach the scoped-function
+         * to this cloned data without affecting the parent one.
+         * (allow the execution for the subdata but not for the parent because
+         * function doesn't exists there.)
+         * 
+         * First parameter are environment variables you create with $let[]
+         * Second parameter are internal variables that ea.ts uses "to work under the hood".
+         */
+        const data = d.extend(d._, d.__);
+
+        // Now load your function source.
+        data.functions.load(__dirname, (fn) => typeof fn.parent !== "undefined" && fn.parent === this.name);
+
+        /**
+         * Now resolve the function argument using an util method.
+         * We pass as first parameter, the cloned data where the function exists
+         * and as second param the code to be parsed.
+         */
+        const result = await Util.resolveCode(data, content);
+
+        // We return the result.
+        return result;
+    }
+};
+```
+
+### Creating the scoped function
+```js
+// /functions/load.js
+exports.default = class SubFunc extends APIFunction {
+    name = "$load";
+    description = "Loads the result to a variable.";
+    parameters = [{
+        name: "Name",
+        description: "Variable name to load the value to.",
+        type: ParamType.String,
+        required: true,
+        rest: false,
+        defaultValue: null
+    },{
+        name: "Value",
+        description: "Value to be loaded to the variable.",
+        type: ParamType.String,
+        required: true,
+        rest: false,
+        defaultValue: null
+    }]
+    usage = "$load[name;value]"
+    compile = true
+    aliases = []
+    async run(d, [name, value]) {
+        d.setVar(name, value)
+    }
+};
+```
+:::tip
+You can set the `compile` property to **false**
+when function has no args to speed-up
+interpretation phase.
+:::
+
+### Using our custom function
+```
+$map[1,2,3,4,5,6;
+    $load[res;$sum[%element%;3]]
+]
+^ works fine.
+
+$map[1,2,3,4,5,6;
+    $log[%element%;3]
+]
+$load[res;$sum[%element%;3]]
+^ ERROR: $load is not a function.
+```
