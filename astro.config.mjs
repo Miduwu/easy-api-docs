@@ -40,12 +40,8 @@ export default defineConfig({
 						directory: "/functions/",
 					}
 				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
 			],
-			plugins: [starlightThemeRapide()],
+			plugins: [/*starlightThemeRapide()*/],
 		}),
 	],
 });
