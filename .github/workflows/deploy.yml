@@ -1,10 +1,14 @@
-name: Deploy to GitHub Pages 🚀
+name: Deploy to GitHub Pages
 
 on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [master]
+    branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
+# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -13,74 +17,23 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-      PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
-      PUBLIC_COMMIT: ${{ github.sha }}
-      PUBLIC_ENV: "production"
     steps:
-      - name: Checkout Repository
+      - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: 📝 Modify Environment variables (commit)
-        id: vars
-        run: |
-          shortCommit=$(git rev-parse --short ${{ github.sha }})
-          echo "::set-env name=PUBLIC_COMMIT::$shortCommit"
-      - name: 📝 Modify Environment variables (time)
-        id: time
-        run: |
-          time=$(date +'%d/%m/%Y %H:%M:%S')
-          echo "::set-env name=PUBLIC_BUILD_TIME::$time"
-      - name: 📝 Set Environment variables
-        run: |
-          echo "PUBLIC_BUILD_TIME: $PUBLIC_BUILD_TIME"
-          echo "PUBLIC_COMMIT: $PUBLIC_COMMIT"
-          echo "PUBLIC_ENV: $PUBLIC_ENV"
-      - name: ⚙️ Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
-          cache-dependency-path: "./package-lock.json"
-
-      - name: ♻️ Install Packages
-        shell: "bash"
-        working-directory: ./
-        run: |
-          npm install --legacy-peer-deps
-          npm install react-dom --legacy-peer-deps
-
-      - name: 🧑‍💻 Build
-        shell: "bash"
-        working-directory: ./
-        run: npm run build
-
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: github-pages
-          path: ./dist
+      - name: Install, build, and upload your site
+        uses: withastro/action@v2
+        # with:
+          # path: . # The root location of your Astro project inside the repository. (optional)
+          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
     needs: build
-    permissions:
-      pages: write
-      id-token: write
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: 🚀 Deploy to Github 
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: 🔎 Update Algolia Crawler 
-        if: 1 == 2
-        uses: algolia/algoliasearch-crawler-github-actions@v1.0.10
-        id: algolia_crawler
-        with:
-          crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
-          crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
-          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
-          algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
-          site-url: "https://eats.munlai.me"
