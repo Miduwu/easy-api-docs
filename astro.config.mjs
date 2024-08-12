@@ -6,6 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
+			site: 'https://eats.munlai.me',
 			title: 'easy-api.ts',
 			favicon: './public/eats.png',
 			logo: {
