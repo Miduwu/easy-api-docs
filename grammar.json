@@ -1,0 +1,38 @@
+{
+    "name": "eats",
+    "scopeName": "src.custom",
+    "patterns": [{
+        "include": "#commentPattern"
+    }],
+    "repository": {
+        "commentPattern": {
+            "patterns": [{
+                "begin": "\\$(ignore|c|comment)\\[",
+                "beginCaptures": {
+                    "1": {
+                        "name": "comment.func.eats"
+                    }
+                },
+                "end": "\\]",
+                "endCaptures": {
+                    "0": {
+                        "name": "comment.func.eats"
+                    }
+                }
+            },{
+                "begin": "\\/\\/\\s\\w",
+                "beginCaptures": {
+                    "0": {
+                        "name": "inline.comment.js"
+                    }
+                },
+                "end": "\\\n",
+                "endCaptures": {
+                    "1": {
+                        "name": "inline.comment.js"
+                    }
+                }
+            }]
+        }
+    }
+}

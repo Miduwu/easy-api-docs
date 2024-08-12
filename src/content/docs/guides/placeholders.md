@@ -10,8 +10,8 @@ to handle custom code.
 ### $createCallback
 This function allows the usage of placeholders to
 handle the custom parameters of a callback.
-```js
-// Example
+```eats
+$ignore[Example]
 $createCallback[deg2rad;$calculate[%param_0% * $pi / 180]]
 ```
 You must increment the number in `%param_HERE%` to
@@ -21,8 +21,8 @@ handle the desired parameter.
 This function allows the usage of placeholders to
 retrieve the value of the current element in the
 iteration.
-```js
-// Example
+```eats
+$ignore[Example]
 $arrayCreate[fruits;Apple,Banana,Mango,Watermelon]
 $arrayForEach[fruits;
     $log[Current element: %element%]
@@ -33,8 +33,8 @@ $arrayForEach[fruits;
 This function allows the usage of placeholders to
 retrieve the value of the error message in the
 catch block.
-```js
-// Example
+```eats
+$ignore[Example]
 $try[
     $log;
     $log[Unable to run code with reason: %error%]
@@ -45,8 +45,8 @@ $try[
 This function allows the usage of placeholders to
 retrieve the value of the current key/value in the
 iteration.
-```
-// Example
+```eats
+$ignore[Example]
 $objectCreate[user;{
     "name": "Cyberghxst",
     "age": "96",
@@ -58,7 +58,7 @@ $objectEntries[user;Current data: **%key%** = **%value%**.]
 ### $setBody
 This function allows the usage of placeholders to
 handle the body of a canvas response.
-```js
-// Example
+```eats
+$ignore[Example]
 $setBody[%default%]
 ```

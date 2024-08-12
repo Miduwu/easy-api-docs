@@ -1,10 +1,25 @@
 import starlightThemeRapide from 'starlight-theme-rapide';
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { bundledLanguages } from 'shiki';
+import { readFileSync } from 'fs';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://eats.munlai.me',
+	markdown: {
+		shikiConfig: {
+			langs: [
+				...Object.keys(bundledLanguages),
+				JSON.parse(
+					readFileSync(
+						"./grammar.json",
+						"utf-8"
+					)
+				)
+			]
+		}
+	},
 	integrations: [
 		starlight({
 			title: 'easy-api.ts',
