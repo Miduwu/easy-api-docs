@@ -9,7 +9,7 @@ Retrieves a path parameter.
 |------|--------------------------|----------|---------------|
 | Name | The path parameter name. | Yes      | None          |
 ## Example
-```
+```eats
 $path[name]
 ```
 ## Function Aliases

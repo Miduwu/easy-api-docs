@@ -9,6 +9,6 @@ Checks if an array exists or not.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayExists[name]
 ```

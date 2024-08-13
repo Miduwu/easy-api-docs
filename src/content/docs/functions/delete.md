@@ -9,6 +9,6 @@ Delete a environment variable.
 |---------------|---------------------------------------------------|----------|---------------|
 | Variable Name | Variable name to be deleted from the environment. | Yes      | None          |
 ## Example
-```
+```eats
 $delete[variableName]
 ```

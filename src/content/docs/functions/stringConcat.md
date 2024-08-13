@@ -10,7 +10,7 @@ Converts a text to lowercase.
 | Text  | The text to be converted.     | Yes      | None          |
 | Texts | The texts to be concatenated. | Yes      | None          |
 ## Example
-```
+```eats
 $stringConcat[text;...texts]
 ```
 ## Function Aliases

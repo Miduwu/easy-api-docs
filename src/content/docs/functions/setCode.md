@@ -12,6 +12,6 @@ Set the response code.
 |------|-----------------------------------------|----------|---------------|
 | Code | Status code for the response to be set. | Yes      | None          |
 ## Example
-```
+```eats
 $setCode[code]
 ```

@@ -9,7 +9,7 @@ Gets a previously created object.
 |------|-------------------------|----------|---------------|
 | Name | The name of the object. | Yes      | None          |
 ## Example
-```
+```eats
 $objectGet[name]
 ```
 ## Function Aliases

@@ -11,6 +11,6 @@ Set a NodeJS timeout.
 | Time | Time to execute the code.               | Yes      | None          |
 | Code | Code to be executed when the time ends. | Yes      | None          |
 ## Example
-```
+```eats
 $setTimeout[name;time;code]
 ```

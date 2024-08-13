@@ -8,6 +8,6 @@ Retrieves the canvas width.
 **$canvasWidth** is only usable inside **$createCanvas**.
 :::
 ## Example
-```
+```eats
 $canvasWidth
 ```

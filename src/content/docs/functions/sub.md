@@ -9,6 +9,6 @@ Returns the substraction of multiple numbers.
 |--------|----------------------------|----------|---------------|
 | Values | Numbers to be substracted. | Yes      | None          |
 ## Example
-```
+```eats
 $sub[...values]
 ```

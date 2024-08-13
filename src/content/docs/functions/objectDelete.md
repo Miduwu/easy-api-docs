@@ -9,7 +9,7 @@ Deletes an object from the environment data.
 |------|-------------------------|----------|---------------|
 | Name | The name of the object. | Yes      | None          |
 ## Example
-```
+```eats
 $objectDelete[name]
 ```
 ## Function Aliases

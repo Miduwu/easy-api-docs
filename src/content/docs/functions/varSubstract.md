@@ -10,7 +10,7 @@ Shorthand for $var[...;$calculate[$get[...] - $get[...]]].
 | Name   | Variable name.                              | Yes      | None          |
 | Amount | Amount to be substracted from the variable. | Yes      | None          |
 ## Example
-```
+```eats
 $varSubstract[name;amount]
 ```
 ## Function Aliases

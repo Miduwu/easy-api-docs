@@ -9,7 +9,7 @@ Converts a text to uppercase.
 |------|---------------------------|----------|---------------|
 | Text | The text to be converted. | Yes      | None          |
 ## Example
-```
+```eats
 $uppercase[text]
 ```
 ## Function Aliases

@@ -10,6 +10,6 @@ Evaluates easy-api.ts code.
 | Return Code | Whether return evaluation result. (boolean value) | Yes      | None          |
 | Code        | Native code to be evaluated.                      | Yes      | None          |
 ## Example
-```
+```eats
 $eval[returnCode;code]
 ```

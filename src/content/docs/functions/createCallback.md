@@ -10,7 +10,7 @@ Creates a native custom function.
 | Name | Native function name. | Yes      | None          |
 | Code | Native function code. | Yes      | None          |
 ## Example
-```
+```eats
 $createCallback[name;...code]
 ```
 ## Function Aliases

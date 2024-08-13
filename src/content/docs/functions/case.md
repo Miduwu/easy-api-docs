@@ -13,6 +13,6 @@ A switch case statement.
 | Value | Required value to execute the case. | Yes      | None          |
 | Code  | Code to be executed.                | Yes      | None          |
 ## Example
-```
+```eats
 $case[value;code]
 ```

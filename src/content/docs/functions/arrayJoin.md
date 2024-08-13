@@ -10,6 +10,6 @@ Joins an array using the provided separator.
 | Name      | The name of the array.          | Yes      | None          |
 | Separator | Character to join the elements. | No       | ,             |
 ## Example
-```
+```eats
 $arrayJoin[name;separator?]
 ```

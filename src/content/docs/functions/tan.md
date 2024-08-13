@@ -9,6 +9,6 @@ Returns the tangent of a number.
 |-------|-------------------------------------------------------|----------|---------------|
 | Value | A numeric expression for which the tangent is needed. | Yes      | None          |
 ## Example
-```
+```eats
 $tan[value]
 ```

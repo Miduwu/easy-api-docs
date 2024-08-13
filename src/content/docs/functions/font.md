@@ -14,6 +14,6 @@ Set the canvas font.
 | Family | Font family. | No       | Arial         |
 | Style  | Font style.  | No       |               |
 ## Example
-```
+```eats
 $font[size;family?;style?]
 ```

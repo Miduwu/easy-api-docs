@@ -12,6 +12,6 @@ Delete a variable from the database.
 | Variable Name | Variable name to be deleted from the database. | Yes      | None          |
 | Table         | Database table to delete the variable from.    | No       | main          |
 ## Example
-```
+```eats
 $deleteVar[variableName;table?]
 ```

@@ -10,7 +10,7 @@ Returns whether the given text ends with the provided word.
 | Text | The text to work with.  | Yes      | None          |
 | Word | The word to be matched. | Yes      | None          |
 ## Example
-```
+```eats
 $stringEndsWith[text;word]
 ```
 ## Function Aliases

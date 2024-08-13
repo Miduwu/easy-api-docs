@@ -9,7 +9,7 @@ Calculates a basic math expression.
 |------------|---------------------------------|----------|---------------|
 | Expression | Math expression to be compiled. | Yes      | None          |
 ## Example
-```
+```eats
 $calculate[expression]
 ```
 ## Function Aliases

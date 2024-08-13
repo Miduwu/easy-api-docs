@@ -11,6 +11,6 @@ Tests an expected value from the given code.
 | Expected   | Expected value of the test result. | Yes      | None          |
 | Code       | Code to be tested.                 | Yes      | None          |
 ## Example
-```
+```eats
 $toBe[testTitle;expected;code]
 ```

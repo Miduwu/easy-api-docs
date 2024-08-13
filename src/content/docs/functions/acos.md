@@ -9,6 +9,6 @@ Returns the arc cosine (or inverse cosine) of a number.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $acos[value]
 ```

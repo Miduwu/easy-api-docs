@@ -13,6 +13,6 @@ Adds an effect to the canvas.
 | Effect | The name of the effect.      | Yes      | None          |
 | Amount | Filter amount to be applied. | Yes      | None          |
 ## Example
-```
+```eats
 $addEffect[effect;amount]
 ```

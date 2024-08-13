@@ -13,6 +13,6 @@ Measure all dimensions of a text.
 | Text | The text to be placed in the canvas. | Yes      | None          |
 | Type | Return data style.                   | Yes      | None          |
 ## Example
-```
+```eats
 $measureText[text;type]
 ```

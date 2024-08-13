@@ -9,7 +9,7 @@ Joins the provided paths.
 |-------|---------------------|----------|---------------|
 | Paths | Paths to be joined. | Yes      | None          |
 ## Example
-```
+```eats
 $pathJoin[...paths]
 ```
 ## Function Aliases

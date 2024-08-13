@@ -10,7 +10,7 @@ Returns whether the array contains the provided element or not.
 | Name | The name of the array. | Yes      | None          |
 | Word | Word to be found.      | Yes      | None          |
 ## Example
-```
+```eats
 $arrayIncludes[name;word]
 ```
 ## Function Aliases

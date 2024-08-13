@@ -10,7 +10,7 @@ Creates a environment variable.
 | Variable Name  | Variable name to be created in the environment. | Yes      | None          |
 | Variable Value | The value for the environment variable.         | Yes      | None          |
 ## Example
-```
+```eats
 $set[variableName;variableValue]
 ```
 ## Function Aliases

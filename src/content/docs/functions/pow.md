@@ -9,6 +9,6 @@ This function calculates the power of several numbers.
 |--------|--------------------------|----------|---------------|
 | Values | Numbers to be 'powered'. | Yes      | None          |
 ## Example
-```
+```eats
 $pow[...values]
 ```

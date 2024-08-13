@@ -9,7 +9,7 @@ Converts a text to lowercase.
 |------|---------------------------|----------|---------------|
 | Text | The text to be converted. | Yes      | None          |
 ## Example
-```
+```eats
 $lowercase[text]
 ```
 ## Function Aliases

@@ -9,6 +9,6 @@ Returns the smallest integer greater than or equal to its numeric argument.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $ceil[value]
 ```

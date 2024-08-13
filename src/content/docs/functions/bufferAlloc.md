@@ -10,6 +10,6 @@ Allocates a buffer.
 | Name  | The name of the array. | Yes      | None          |
 | Bytes | Buffer byte length.    | Yes      | None          |
 ## Example
-```
+```eats
 $bufferAlloc[name;bytes]
 ```

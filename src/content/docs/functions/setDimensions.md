@@ -13,7 +13,7 @@ Set the width and height of the canvas to be created.
 | Width  | Canvas width.  | Yes      | None          |
 | Height | Canvas height. | Yes      | None          |
 ## Example
-```
+```eats
 $setDimensions[width;height]
 ```
 ## Function Aliases

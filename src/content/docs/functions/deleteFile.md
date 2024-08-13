@@ -9,7 +9,7 @@ Unlinks a path/file from the file system.
 |------|-------------------------------------|----------|---------------|
 | Path | The path of the file to be deleted. | Yes      | None          |
 ## Example
-```
+```eats
 $deleteFile[path]
 ```
 ## Function Aliases

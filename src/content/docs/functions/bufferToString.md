@@ -9,6 +9,6 @@ Returns a string representation of a buffer.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $bufferToString[name]
 ```

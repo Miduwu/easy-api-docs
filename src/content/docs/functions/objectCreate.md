@@ -10,7 +10,7 @@ Creates a new object.
 | Name      | The name for the new object.       | Yes      | None          |
 | Structure | A key-value pair object interface. | No       | {}            |
 ## Example
-```
+```eats
 $objectCreate[name;structure?]
 ```
 ## Function Aliases

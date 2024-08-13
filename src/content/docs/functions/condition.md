@@ -9,7 +9,7 @@ Parses a condition.
 |------------|------------------------------|----------|---------------|
 | Expression | The expression to be parsed. | Yes      | None          |
 ## Example
-```
+```eats
 $condition[expression]
 ```
 ## Function Aliases

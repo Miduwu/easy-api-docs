@@ -9,6 +9,6 @@ Returns how many CPU is being used by the process.
 |----------|--------------------------------------------------------|----------|---------------|
 | Decimals | How many decimals to be attached to the return number. | No       |             2 |
 ## Example
-```
+```eats
 $cpu[decimals?]
 ```

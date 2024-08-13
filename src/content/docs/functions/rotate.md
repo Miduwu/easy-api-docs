@@ -12,6 +12,6 @@ Rotates a canvas.
 |-------|-----------------|----------|---------------|
 | Angle | Rotation angle. | Yes      | None          |
 ## Example
-```
+```eats
 $rotate[angle]
 ```

@@ -12,6 +12,6 @@ Returns the height of the image.
 |----------|-----------------------------------------|----------|---------------|
 | Image ID | Cached image ID to get the height from. | Yes      | None          |
 ## Example
-```
+```eats
 $imageHeight[imageId]
 ```

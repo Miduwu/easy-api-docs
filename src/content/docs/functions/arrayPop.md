@@ -9,6 +9,6 @@ Removes and returns the last element of the array.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayPop[name]
 ```

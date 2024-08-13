@@ -10,6 +10,6 @@ Finds the index of the provided array element.
 | Name | The name of the array. | Yes      | None          |
 | Word | Word to be found.      | Yes      | None          |
 ## Example
-```
+```eats
 $arrayFindIndex[name;word]
 ```

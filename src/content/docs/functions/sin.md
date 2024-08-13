@@ -9,6 +9,6 @@ Returns the sine of a number.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $sin[value]
 ```

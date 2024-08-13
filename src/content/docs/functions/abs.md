@@ -9,7 +9,7 @@ Returns the absolute value of a number.
 |-------|-------------------------------------|----------|---------------|
 | Value | Value to extract the absolute from. | Yes      | None          |
 ## Example
-```
+```eats
 $abs[value]
 ```
 ## Function Aliases

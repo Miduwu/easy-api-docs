@@ -10,6 +10,6 @@ Joins the values of an object.
 | Name      | The name of the object.                   | Yes      | None          |
 | Separator | Text separator to join the object values. | No       | ,             |
 ## Example
-```
+```eats
 $objectValues[name;separator?]
 ```

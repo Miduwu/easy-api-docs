@@ -9,6 +9,6 @@ Returns the multiplication of multiple numbers.
 |--------|------------------------------|----------|---------------|
 | Values | Numbers to be multiplicated. | Yes      | None          |
 ## Example
-```
+```eats
 $multi[...values]
 ```

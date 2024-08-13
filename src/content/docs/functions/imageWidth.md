@@ -12,6 +12,6 @@ Returns the width of the image.
 |----------|----------------------------------------|----------|---------------|
 | Image ID | Cached image ID to get the width from. | Yes      | None          |
 ## Example
-```
+```eats
 $imageWidth[imageId]
 ```

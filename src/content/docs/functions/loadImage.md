@@ -14,6 +14,6 @@ Load a new image and save it using the given ID.
 | Type     | Source type.                  | Yes      | None          |
 | Source   | Source to get the image from. | Yes      | None          |
 ## Example
-```
+```eats
 $loadImage[imageId;type;source]
 ```

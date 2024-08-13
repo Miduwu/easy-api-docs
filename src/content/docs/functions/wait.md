@@ -9,7 +9,7 @@ Holds code execution for the given time.
 |----------|--------------------------------------|----------|---------------|
 | Duration | The duration to hold code execution. | Yes      | None          |
 ## Example
-```
+```eats
 $wait[duration]
 ```
 ## Function Aliases

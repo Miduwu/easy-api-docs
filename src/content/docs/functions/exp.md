@@ -9,6 +9,6 @@ Returns e (the base of natural logarithms) raised to a power.
 |-------|---------------------------------------------------|----------|---------------|
 | Value | A numeric expression representing the power of e. | Yes      | None          |
 ## Example
-```
+```eats
 $exp[value]
 ```

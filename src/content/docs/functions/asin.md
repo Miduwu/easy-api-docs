@@ -9,6 +9,6 @@ Returns the arcsine of a number.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $asin[value]
 ```

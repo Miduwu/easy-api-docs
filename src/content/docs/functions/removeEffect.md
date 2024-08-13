@@ -8,6 +8,6 @@ Removes an effect from the canvas.
 **$removeEffect** is only usable inside **$createCanvas**.
 :::
 ## Example
-```
+```eats
 $removeEffect
 ```

@@ -12,6 +12,6 @@ Check if the given ID belongs to a valid cached image ID.
 |----------|-----------------------------------|----------|---------------|
 | Image ID | Cached image ID to be downloaded. | Yes      | None          |
 ## Example
-```
+```eats
 $isImage[imageId]
 ```

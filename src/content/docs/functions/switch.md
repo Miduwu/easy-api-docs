@@ -10,6 +10,6 @@ Executes a switch statement.
 | Value | Value to be evaluated. | Yes      | None          |
 | Cases | Cases to be executed.  | Yes      | None          |
 ## Example
-```
+```eats
 $switch[value;cases]
 ```

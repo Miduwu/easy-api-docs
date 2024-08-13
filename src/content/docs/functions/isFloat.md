@@ -9,7 +9,7 @@ Returns wheter the text inside is float.
 |------|------------------------|----------|---------------|
 | Text | The text to be tested. | Yes      | None          |
 ## Example
-```
+```eats
 $isFloat[text]
 ```
 ## Function Aliases

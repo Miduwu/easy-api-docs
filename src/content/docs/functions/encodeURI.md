@@ -9,7 +9,7 @@ Encodes a string to URL format.
 |------|-------------------------|----------|---------------|
 | Text | The text to be encoded. | Yes      | None          |
 ## Example
-```
+```eats
 $encodeURI[text]
 ```
 ## Function Aliases

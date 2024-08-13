@@ -12,7 +12,7 @@ Replace something in the provided text using regular expressions.
 | Replacer | The word to replace the match with.   | No       |               |
 | Flags    | The flags for the regular expression. | No       | g             |
 ## Example
-```
+```eats
 $stringReplaceRegex[text;regex;replacer?;flags?]
 ```
 ## Function Aliases

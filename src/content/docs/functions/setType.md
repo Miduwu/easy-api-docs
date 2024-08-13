@@ -12,6 +12,6 @@ Set the response type.
 |------|----------------------------------|----------|---------------|
 | Type | Type for the response to be set. | Yes      | None          |
 ## Example
-```
+```eats
 $setType[type]
 ```

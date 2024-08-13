@@ -9,6 +9,6 @@ Check if the given value is falsy.
 |-------|---------------------|----------|---------------|
 | Value | Value to be tested. | Yes      | None          |
 ## Example
-```
+```eats
 $not[value]
 ```

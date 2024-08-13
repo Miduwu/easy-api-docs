@@ -13,6 +13,6 @@ else if statement.
 | Condition | The condition to be evaluated.           | Yes      | None          |
 | Then code | Code to execute if the condition is met. | Yes      | None          |
 ## Example
-```
+```eats
 $elseif[condition;thenCode]
 ```

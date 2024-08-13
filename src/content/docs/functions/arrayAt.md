@@ -10,6 +10,6 @@ Returns the array element at the provided index.
 | Name  | The name of the array.            | Yes      | None          |
 | Index | The element index to be accessed. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayAt[name;index]
 ```

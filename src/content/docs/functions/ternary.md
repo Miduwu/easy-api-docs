@@ -11,7 +11,7 @@ Executes a ternary statement.
 | Then       | The code to be execute if the condition is met.     | Yes      | None          |
 | Else       | The code to be execute if the condition is not met. | No       | None          |
 ## Example
-```
+```eats
 $ternary[expression;then;else?]
 ```
 ## Function Aliases

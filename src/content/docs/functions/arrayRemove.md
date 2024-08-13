@@ -10,6 +10,6 @@ Removes the provided array element by its index.
 | Name  | The name of the array.       | Yes      | None          |
 | Index | Element index to be removed. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayRemove[name;index]
 ```

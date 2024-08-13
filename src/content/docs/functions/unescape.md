@@ -9,6 +9,6 @@ Unescapes a text.
 |------|---------------------------|----------|---------------|
 | Text | The text to be unescaped. | Yes      | None          |
 ## Example
-```
+```eats
 $unescape[text]
 ```

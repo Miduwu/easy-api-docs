@@ -8,6 +8,6 @@ Retrieves the canvas height.
 **$canvasHeight** is only usable inside **$createCanvas**.
 :::
 ## Example
-```
+```eats
 $canvasHeight
 ```

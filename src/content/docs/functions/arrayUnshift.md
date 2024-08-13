@@ -10,6 +10,6 @@ Adds elements to the beginning of the array
 | Name     | The name of the array.             | Yes      | None          |
 | Elements | Elements to be added to the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayUnshift[name;...elements]
 ```

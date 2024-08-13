@@ -12,6 +12,6 @@ Get a variable from the database.
 | Variable Name | Variable name to be retrieves from the database. | Yes      | None          |
 | Table         | Database table to get the variable from.         | No       | main          |
 ## Example
-```
+```eats
 $getVar[variableName;table?]
 ```

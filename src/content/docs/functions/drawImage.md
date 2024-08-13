@@ -17,6 +17,6 @@ Draws an image over the canvas.
 | Height | Image height.                       | Yes      | None          |
 | Radius | Image corner radius.                | No       |             0 |
 ## Example
-```
+```eats
 $drawImage[id;x;y;width;height;radius?]
 ```

@@ -5,6 +5,6 @@ description: Returns the stored time value in milliseconds since midnight, Janua
 
 Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC.
 ## Example
-```
+```eats
 $dateTime
 ```

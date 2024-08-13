@@ -9,6 +9,6 @@ Check wether all expressions are met.
 |------------|---------------------------------|----------|---------------|
 | Expression | The expression to be evaluated. | Yes      | None          |
 ## Example
-```
+```eats
 $and[...expression]
 ```

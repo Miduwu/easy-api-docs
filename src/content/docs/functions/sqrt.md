@@ -9,6 +9,6 @@ Returns the square root of a number.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $sqrt[value]
 ```

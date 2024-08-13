@@ -11,7 +11,7 @@ Get a part of a text, from X to Y.
 | From | Slicing start index.   | Yes      | None          |
 | To   | Slicing end index.     | No       | textLength    |
 ## Example
-```
+```eats
 $stringSlice[text;from;to?]
 ```
 ## Function Aliases

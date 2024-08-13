@@ -12,6 +12,6 @@ Set the canvas opacity.
 |--------|-------------------------------|----------|---------------|
 | Amount | Context amount to be applied. | Yes      | None          |
 ## Example
-```
+```eats
 $opacity[amount]
 ```

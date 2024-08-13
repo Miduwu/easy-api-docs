@@ -10,7 +10,7 @@ Retrieves the character at the provided index.
 | Text  | The text to work with.                | Yes      | None          |
 | Index | Character index to get from the text. | Yes      | None          |
 ## Example
-```
+```eats
 $stringAt[text;index]
 ```
 ## Function Aliases

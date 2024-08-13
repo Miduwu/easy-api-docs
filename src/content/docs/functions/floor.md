@@ -9,6 +9,6 @@ Returns the greatest integer less than or equal to its numeric argument.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $floor[value]
 ```

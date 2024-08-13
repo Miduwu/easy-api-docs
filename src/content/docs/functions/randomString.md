@@ -9,6 +9,6 @@ Generates a random string.
 |--------|------------------------------------------|----------|---------------|
 | Length | The length for the text to be generated. | No       |             5 |
 ## Example
-```
+```eats
 $randomString[length?]
 ```

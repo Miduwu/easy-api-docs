@@ -9,8 +9,9 @@ Converts a text to title case.
 |------|------------------------|----------|---------------|
 | Text | The text to work with. | Yes      | None          |
 ## Example
-```
+```eats
 $toTitleCase[text]
 ```
 ## Function Aliases
 - $titleCase
+- $toFormalCase

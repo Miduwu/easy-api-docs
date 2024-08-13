@@ -9,7 +9,7 @@ Replies the HTTP request.
 |---------|------------------------------------|----------|---------------|
 | Content | Content to reply the request with. | Yes      | None          |
 ## Example
-```
+```eats
 $reply[content]
 ```
 ## Function Aliases

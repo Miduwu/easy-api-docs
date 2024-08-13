@@ -9,6 +9,6 @@ Sorts an array alphabetically.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arraySort[name]
 ```

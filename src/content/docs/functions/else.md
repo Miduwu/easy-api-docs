@@ -12,6 +12,6 @@ else statement.
 |------|-----------------------------------------------------|----------|---------------|
 | Code | Code to execute if the past conditions are not met. | Yes      | None          |
 ## Example
-```
+```eats
 $else[code]
 ```

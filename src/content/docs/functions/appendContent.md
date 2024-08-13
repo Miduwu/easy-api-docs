@@ -10,6 +10,6 @@ Appends content to the end of the provided file.
 | Path    | The path of the file to append content to. | Yes      | None          |
 | Content | The content to append to the file.         | Yes      | None          |
 ## Example
-```
+```eats
 $appendContent[path;content]
 ```

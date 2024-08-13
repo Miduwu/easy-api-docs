@@ -5,6 +5,6 @@ description: Gets the month of the year, using local time.
 
 Gets the month of the year, using local time.
 ## Example
-```
+```eats
 $dateMonth
 ```

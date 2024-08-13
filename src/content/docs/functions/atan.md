@@ -9,6 +9,6 @@ Returns the arctangent of a number.
 |-------|----------------------------------------------------------|----------|---------------|
 | Value | A numeric expression for which the arctangent is needed. | Yes      | None          |
 ## Example
-```
+```eats
 $atan[value]
 ```

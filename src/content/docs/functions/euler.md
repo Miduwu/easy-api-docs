@@ -5,6 +5,6 @@ description: The mathematical constant e. This is Euler's number, the base of na
 
 The mathematical constant e. This is Euler's number, the base of natural logarithms.
 ## Example
-```
+```eats
 $euler
 ```

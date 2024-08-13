@@ -10,6 +10,6 @@ Returns how many RAM is being used by the process.
 | Type     | RAM type to be selected.                  | No       | MB            |
 | Decimals | How many decimals to round the ram usage. | No       |             2 |
 ## Example
-```
+```eats
 $ram[type?;decimals?]
 ```

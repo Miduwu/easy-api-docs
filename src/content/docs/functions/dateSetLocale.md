@@ -9,6 +9,6 @@ Set the system locale.
 |--------|-------------------|----------|---------------|
 | Locale | Locale to be set. | Yes      | None          |
 ## Example
-```
+```eats
 $dateSetLocale[locale]
 ```

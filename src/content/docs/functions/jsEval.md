@@ -10,7 +10,7 @@ Evaluates JavaScript code.
 | Return Code | Whether return evaluation result. (boolean value) | Yes      | None          |
 | Code        | JavaScript code to be evaluated.                  | Yes      | None          |
 ## Example
-```
+```eats
 $jsEval[returnCode;...code]
 ```
 ## Function Aliases

@@ -9,7 +9,7 @@ Decodes a string to URL format.
 |------|-------------------------|----------|---------------|
 | Text | The text to be decoded. | Yes      | None          |
 ## Example
-```
+```eats
 $decodeURI[text]
 ```
 ## Function Aliases

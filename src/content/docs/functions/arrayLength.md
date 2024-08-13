@@ -9,6 +9,6 @@ Returns the array length.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayLength[name]
 ```

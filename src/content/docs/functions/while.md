@@ -11,6 +11,6 @@ While statement.
 | Code       | Code to be executed.                       | Yes      | None          |
 | Separator  | Text result separator to join the results. | No       | ,             |
 ## Example
-```
+```eats
 $while[expression;code;separator?]
 ```

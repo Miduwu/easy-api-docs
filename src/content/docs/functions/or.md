@@ -9,6 +9,6 @@ Check wether at least one condition is met.
 |------------|---------------------------------|----------|---------------|
 | Expression | The expression to be evaluated. | Yes      | None          |
 ## Example
-```
+```eats
 $or[...expression]
 ```

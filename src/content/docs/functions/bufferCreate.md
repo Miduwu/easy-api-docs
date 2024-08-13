@@ -10,6 +10,6 @@ Creates a new buffer.
 | Name    | The name of the array. | Yes      | None          |
 | Content | Buffer content.        | Yes      | None          |
 ## Example
-```
+```eats
 $bufferCreate[name;content]
 ```

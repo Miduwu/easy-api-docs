@@ -10,7 +10,7 @@ Returns whether the given text includes the provided word.
 | Text | The text to work with.  | Yes      | None          |
 | Word | The word to be matched. | Yes      | None          |
 ## Example
-```
+```eats
 $stringIncludes[text;word]
 ```
 ## Function Aliases

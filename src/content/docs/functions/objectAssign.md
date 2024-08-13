@@ -10,7 +10,7 @@ Assign objects to a base object.
 | Name    | The name of the object to assign structs to. | Yes      | None          |
 | Objects | Objects to be assigned.                      | Yes      | None          |
 ## Example
-```
+```eats
 $objectAssign[name;...objects]
 ```
 ## Function Aliases

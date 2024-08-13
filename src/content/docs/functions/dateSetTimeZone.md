@@ -9,6 +9,6 @@ Set the system time zone.
 |-----------|----------------------|----------|---------------|
 | Time Zone | Time zone to be set. | Yes      | None          |
 ## Example
-```
+```eats
 $dateSetTimeZone[timeZone]
 ```

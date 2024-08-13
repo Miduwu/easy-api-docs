@@ -10,6 +10,6 @@ Returns the index of the first array element matched.
 | Name | The name of the array. | Yes      | None          |
 | Word | Word to be found.      | Yes      | None          |
 ## Example
-```
+```eats
 $arrayIndexOf[name;word]
 ```

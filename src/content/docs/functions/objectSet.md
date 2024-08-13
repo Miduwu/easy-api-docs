@@ -11,7 +11,7 @@ Set a property in an object.
 | Path  | Object property path to be setted. | Yes      | None          |
 | Value | The value for the object property. | Yes      | None          |
 ## Example
-```
+```eats
 $objectSet[name;path;value]
 ```
 ## Function Aliases

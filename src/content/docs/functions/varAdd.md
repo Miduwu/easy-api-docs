@@ -10,7 +10,7 @@ Shorthand for $var[...;$calculate[$get[...] + $get[...]]].
 | Name   | Variable name.                      | Yes      | None          |
 | Amount | Amount to be added to the variable. | Yes      | None          |
 ## Example
-```
+```eats
 $varAdd[name;amount]
 ```
 ## Function Aliases

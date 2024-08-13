@@ -16,6 +16,6 @@ Draws a rectangle over the canvas.
 | Height | Rectangle height.                       | Yes      | None          |
 | Radius | Rectangle corner radius.                | No       |             0 |
 ## Example
-```
+```eats
 $drawRect[x;y;width;height;radius?]
 ```

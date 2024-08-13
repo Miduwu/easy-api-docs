@@ -9,7 +9,7 @@ Returns a random text from all possible options.
 |-------|---------------------------------------|----------|---------------|
 | Texts | The texts to set as possible options. | Yes      | None          |
 ## Example
-```
+```eats
 $choice[...texts]
 ```
 ## Function Aliases

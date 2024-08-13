@@ -18,6 +18,6 @@ Draws a text over the canvas.
 | Align          | Text align.                          | No       | left          |
 | Vertical Align | Text vertical align.                 | No       | top           |
 ## Example
-```
+```eats
 $drawText[text;x;y;width;height;align?;verticalAlign?]
 ```

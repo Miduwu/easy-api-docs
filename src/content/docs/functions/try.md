@@ -11,6 +11,6 @@ Try to execute the given code, if something goes wrong, catch code is executed.
 | Catch Code   | Code to be executed in case some error ocurrs. | Yes      | None          |
 | Finally Code | Code to be executed finally.                   | No       | None          |
 ## Example
-```
+```eats
 $try[code;catchCode;finallyCode?]
 ```

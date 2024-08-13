@@ -12,6 +12,6 @@ Check if a variable exists in the database.
 | Variable Name | Variable name to be created in the database. | Yes      | None          |
 | Table         | Database table to check the variable in.     | No       | main          |
 ## Example
-```
+```eats
 $hasVar[variableName;table?]
 ```

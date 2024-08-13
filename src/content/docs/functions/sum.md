@@ -9,6 +9,6 @@ Returns the addition of multiple numbers.
 |--------|----------------------|----------|---------------|
 | Values | Numbers to be added. | Yes      | None          |
 ## Example
-```
+```eats
 $sum[...values]
 ```

@@ -9,7 +9,7 @@ Retrieves a request header.
 |------|-----------------------------------------|----------|---------------|
 | Name | The name of the header to be retrieved. | Yes      | None          |
 ## Example
-```
+```eats
 $header[name]
 ```
 ## Function Aliases

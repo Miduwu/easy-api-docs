@@ -10,6 +10,6 @@ Returns a random number between the provided range.
 | Minimum | The minimum number of the range. | Yes      | None          |
 | Maximum | The maximum number of the range. | Yes      | None          |
 ## Example
-```
+```eats
 $randomNumber[minimum;maximum]
 ```

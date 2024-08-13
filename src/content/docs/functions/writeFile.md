@@ -10,6 +10,6 @@ Replaces the previews content with the content provided into the provided file.
 | Path    | The path of the file to write content to. | Yes      | None          |
 | Content | The content to write in the file.         | Yes      | None          |
 ## Example
-```
+```eats
 $writeFile[path;content]
 ```

@@ -9,6 +9,6 @@ Retrieves a property from the HTTP request response.
 |------|------------------------------------|----------|---------------|
 | Path | Property key path to be retrieved. | Yes      | None          |
 ## Example
-```
+```eats
 $httpResult[path]
 ```

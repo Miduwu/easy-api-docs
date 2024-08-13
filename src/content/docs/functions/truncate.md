@@ -9,7 +9,7 @@ Removes the decimals digits from a number.
 |-------|-------------------------|----------|---------------|
 | Value | Number to be truncated. | Yes      | None          |
 ## Example
-```
+```eats
 $truncate[...value]
 ```
 ## Function Aliases

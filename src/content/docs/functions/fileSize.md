@@ -10,6 +10,6 @@ Returns the file size.
 | Path     | The path of the file to be checked.         | Yes      | None          |
 | Decimals | How many decimals for the file size number. | No       |             2 |
 ## Example
-```
+```eats
 $fileSize[path;decimals?]
 ```

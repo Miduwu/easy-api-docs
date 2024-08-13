@@ -9,6 +9,6 @@ Executes code synchronously, so, the interpreter won't wait for its execution.
 |------|----------------------|----------|---------------|
 | Code | Code to be executed. | Yes      | None          |
 ## Example
-```
+```eats
 $sync[code]
 ```

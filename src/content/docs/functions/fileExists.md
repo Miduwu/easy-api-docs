@@ -9,6 +9,6 @@ Check if the provided file exists.
 |------|-------------------------------------|----------|---------------|
 | Path | The path of the file to be checked. | Yes      | None          |
 ## Example
-```
+```eats
 $fileExists[path]
 ```

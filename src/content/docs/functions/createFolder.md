@@ -9,6 +9,6 @@ Creates a folder in the provided path.
 |------|--------------------------------------------|----------|---------------|
 | Path | The path of the file to append content to. | Yes      | None          |
 ## Example
-```
+```eats
 $createFolder[path]
 ```

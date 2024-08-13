@@ -9,7 +9,7 @@ Executes an statement.
 |------|--------------------------------|----------|---------------|
 | Code | Statement code to be executed. | Yes      | None          |
 ## Example
-```
+```eats
 $stmt[code]
 ```
 ## Function Aliases

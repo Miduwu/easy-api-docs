@@ -10,7 +10,7 @@ Repeat the given text certain amount of times.
 | Text  | The text to work with.             | Yes      | None          |
 | Times | How many times to repeat the word. | Yes      | None          |
 ## Example
-```
+```eats
 $stringRepeat[text;times]
 ```
 ## Function Aliases

@@ -10,6 +10,6 @@ Joins the keys of an object.
 | Name      | The name of the object.                 | Yes      | None          |
 | Separator | Text separator to join the object keys. | No       | ,             |
 ## Example
-```
+```eats
 $objectKeys[name;separator?]
 ```

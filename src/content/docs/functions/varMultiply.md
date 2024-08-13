@@ -10,7 +10,7 @@ Shorthand for $var[...;$calculate[$get[...] * $get[...]]].
 | Name   | Variable name.                      | Yes      | None          |
 | Amount | Amount to divide the variable with. | Yes      | None          |
 ## Example
-```
+```eats
 $varMultiply[name;amount]
 ```
 ## Function Aliases

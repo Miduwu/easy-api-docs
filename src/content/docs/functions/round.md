@@ -9,6 +9,6 @@ Returns a supplied numeric expression rounded to the nearest integer.
 |-------|-------------------------------------------------|----------|---------------|
 | Value | The value to be rounded to the nearest integer. | Yes      | None          |
 ## Example
-```
+```eats
 $round[value]
 ```

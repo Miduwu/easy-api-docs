@@ -9,6 +9,6 @@ Retrieves a property from environment data.
 |------|--------------------------------|----------|---------------|
 | Path | Property path to be retrieved. | No       | None          |
 ## Example
-```
+```eats
 $data[path?]
 ```

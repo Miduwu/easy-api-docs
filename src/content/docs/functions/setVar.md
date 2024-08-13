@@ -13,6 +13,6 @@ Creates a variable in the database.
 | Variable Value | The value for the variable.                  | Yes      | None          |
 | Table          | Database table to save the variable into.    | No       | main          |
 ## Example
-```
+```eats
 $setVar[variableName;variableValue;table?]
 ```

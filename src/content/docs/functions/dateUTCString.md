@@ -5,6 +5,6 @@ description: Returns a date converted to a string using Universal Coordinated Ti
 
 Returns a date converted to a string using Universal Coordinated Time (UTC).
 ## Example
-```
+```eats
 $dateUTCString
 ```

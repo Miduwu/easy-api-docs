@@ -9,7 +9,7 @@ Returns wheter the text inside is a number.
 |------|------------------------|----------|---------------|
 | Text | The text to be tested. | Yes      | None          |
 ## Example
-```
+```eats
 $isNumber[text]
 ```
 ## Function Aliases

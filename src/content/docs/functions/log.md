@@ -9,7 +9,7 @@ Logs something in the console.
 |-------|------------------------------------|----------|---------------|
 | Texts | Texts to be logged in the console. | Yes      | None          |
 ## Example
-```
+```eats
 $log[...texts]
 ```
 ## Function Aliases

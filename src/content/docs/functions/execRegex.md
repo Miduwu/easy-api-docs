@@ -12,6 +12,6 @@ Executes a regex in a string.
 | Text  | Text to execute the regex on.              | Yes      | None          |
 | Index | Index to get from the executed expression. | No       |             1 |
 ## Example
-```
+```eats
 $execRegex[regex;flags?;text;index?]
 ```

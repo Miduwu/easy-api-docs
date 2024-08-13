@@ -9,6 +9,6 @@ Returns the type of the given value.
 |-------|----------------------|----------|---------------|
 | Value | Value to be checked. | Yes      | None          |
 ## Example
-```
+```eats
 $typeof[value]
 ```

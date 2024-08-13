@@ -9,7 +9,7 @@ Retrieves a query parameter.
 |------|---------------------------|----------|---------------|
 | Name | The query parameter name. | Yes      | None          |
 ## Example
-```
+```eats
 $query[name]
 ```
 ## Function Aliases

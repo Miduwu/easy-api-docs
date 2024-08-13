@@ -9,7 +9,7 @@ Executes a shell command, this function can be dangerous.
 |---------|-------------------------|----------|---------------|
 | Command | Command to be executed. | Yes      | None          |
 ## Example
-```
+```eats
 $execute[command]
 ```
 ## Function Aliases

@@ -9,6 +9,6 @@ Clears a NodeJS timeout.
 |------|----------------------------|----------|---------------|
 | Name | The name for this timeout. | Yes      | None          |
 ## Example
-```
+```eats
 $clearTimeout[name]
 ```

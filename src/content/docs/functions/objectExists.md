@@ -9,6 +9,6 @@ Check if an object exists in the environment data.
 |------|-------------------------|----------|---------------|
 | Name | The name of the object. | Yes      | None          |
 ## Example
-```
+```eats
 $objectExists[name]
 ```

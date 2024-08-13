@@ -9,6 +9,6 @@ Get a environment variable.
 |---------------|-----------------------------------------------------|----------|---------------|
 | Variable Name | Variable name to be retrieved from the environment. | Yes      | None          |
 ## Example
-```
+```eats
 $get[variableName]
 ```

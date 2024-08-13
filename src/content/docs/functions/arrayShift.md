@@ -9,6 +9,6 @@ Removes and returns the first element of the array.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayShift[name]
 ```

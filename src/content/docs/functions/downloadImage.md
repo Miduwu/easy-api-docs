@@ -13,6 +13,6 @@ Downloads a cached image into your file system.
 | Image ID | Cached image ID to be downloaded.   | Yes      | None          |
 | Path     | File path to download the image to. | Yes      | None          |
 ## Example
-```
+```eats
 $downloadImage[imageId;path]
 ```

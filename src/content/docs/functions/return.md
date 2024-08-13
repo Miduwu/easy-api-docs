@@ -12,6 +12,6 @@ Returns a value outside a scope.
 |-------|---------------------------------------|----------|---------------|
 | Value | Value to be retrieved to the outside. | Yes      | None          |
 ## Example
-```
+```eats
 $return[value]
 ```

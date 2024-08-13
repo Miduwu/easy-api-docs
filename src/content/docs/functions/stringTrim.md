@@ -9,7 +9,7 @@ Trim spaces from start and end of the given text.
 |------|------------------------|----------|---------------|
 | Text | The text to work with. | Yes      | None          |
 ## Example
-```
+```eats
 $stringTrim[text]
 ```
 ## Function Aliases

@@ -10,7 +10,7 @@ Adds elements to the end of the array
 | Name     | The name of the array.             | Yes      | None          |
 | Elements | Elements to be added to the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayPush[name;...elements]
 ```
 ## Function Aliases

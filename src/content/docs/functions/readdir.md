@@ -10,6 +10,6 @@ Read a folder and returns its file list.
 | Path      | The path to be readed.              | Yes      | None          |
 | Separator | Text separator to join the results. | No       | ,             |
 ## Example
-```
+```eats
 $readdir[path;separator?]
 ```

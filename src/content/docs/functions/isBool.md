@@ -9,7 +9,7 @@ Returns wheter the text inside is a boolean.
 |------|------------------------|----------|---------------|
 | Text | The text to be tested. | Yes      | None          |
 ## Example
-```
+```eats
 $isBool[text]
 ```
 ## Function Aliases

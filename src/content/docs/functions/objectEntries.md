@@ -11,6 +11,6 @@ Returns a text from object entries.
 | Text      | Text to be resolved.                | Yes      | None          |
 | Separator | Text separator to join the results. | No       | ,             |
 ## Example
-```
+```eats
 $objectEntries[name;text;separator?]
 ```

@@ -9,6 +9,6 @@ Returns the average amount of multiple numbers.
 |--------|------------------------|----------|---------------|
 | Values | Numbers to be covered. | Yes      | None          |
 ## Example
-```
+```eats
 $average[...values]
 ```

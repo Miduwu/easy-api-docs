@@ -9,6 +9,6 @@ Returns the cosine of a number.
 |-------|-----------------------|----------|---------------|
 | Value | A numeric expression. | Yes      | None          |
 ## Example
-```
+```eats
 $cos[value]
 ```

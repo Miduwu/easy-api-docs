@@ -9,6 +9,6 @@ Create a new canvas to draw on.
 |---------|-------------------------------------|----------|---------------|
 | Content | Canvas instructions to be executed. | Yes      | None          |
 ## Example
-```
+```eats
 $createCanvas[content]
 ```

@@ -9,7 +9,7 @@ Returns the character count of the provided text.
 |------|------------------------|----------|---------------|
 | Text | The text to work with. | Yes      | None          |
 ## Example
-```
+```eats
 $stringLength[text]
 ```
 ## Function Aliases

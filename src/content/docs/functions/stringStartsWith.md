@@ -10,7 +10,7 @@ Returns whether the given text starts with the provided word.
 | Text | The text to work with.  | Yes      | None          |
 | Word | The word to be matched. | Yes      | None          |
 ## Example
-```
+```eats
 $stringStartsWith[text;word]
 ```
 ## Function Aliases

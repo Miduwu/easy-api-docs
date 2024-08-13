@@ -9,7 +9,7 @@ Returns wheter the text inside is a valid hex code.
 |------|------------------------|----------|---------------|
 | Text | The text to be tested. | Yes      | None          |
 ## Example
-```
+```eats
 $isValidHex[text]
 ```
 ## Function Aliases

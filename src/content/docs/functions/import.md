@@ -10,7 +10,7 @@ Import a property into a file.
 | Path     | File path to import the property from. | Yes      | None          |
 | Property | Property key to be imported from file. | Yes      | None          |
 ## Example
-```
+```eats
 $import[path;property]
 ```
 ## Function Aliases

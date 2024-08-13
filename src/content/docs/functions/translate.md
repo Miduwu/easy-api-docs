@@ -13,6 +13,6 @@ Adds a translation transformation to the current matrix by moving the canvas and
 | X    | X coordinate to place the text to. | Yes      | None          |
 | Y    | Y coordinate to place the text to. | Yes      | None          |
 ## Example
-```
+```eats
 $translate[x;y]
 ```

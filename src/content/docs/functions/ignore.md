@@ -10,6 +10,9 @@ Ignores the code inside.
 | Code   | Code to be ignored.                | Yes      | None          |
 | Return | Whether return the original input. | No       | false         |
 ## Example
-```
+```eats
 $ignore[code;return?]
 ```
+## Function Aliases
+- $c
+- $comment

@@ -12,6 +12,6 @@ Set the response body.
 |------|----------------------------------|----------|---------------|
 | Body | Body for the response to be set. | Yes      | None          |
 ## Example
-```
+```eats
 $setBody[body]
 ```

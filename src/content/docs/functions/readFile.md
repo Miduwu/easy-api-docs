@@ -9,6 +9,6 @@ Reads the provided file.
 |------|------------------------|----------|---------------|
 | Path | The file to be readed. | Yes      | None          |
 ## Example
-```
+```eats
 $readFile[path]
 ```

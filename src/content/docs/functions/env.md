@@ -10,6 +10,6 @@ Retrieves a environment variable.
 | Variable Name | The variable name to be retrieved from Node environment variables. | Yes      | None          |
 | Authorize     | Whether authorize this variable to be retrieved. (boolean value)   | Yes      | None          |
 ## Example
-```
+```eats
 $env[variableName;authorize]
 ```

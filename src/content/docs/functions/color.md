@@ -12,6 +12,6 @@ Set the canvas color.
 |------------------|-------------------------------------------|----------|---------------|
 | Hexadecimal Code | A valid hexadecimal code to put as color. | Yes      | None          |
 ## Example
-```
+```eats
 $color[hexadecimalCode]
 ```

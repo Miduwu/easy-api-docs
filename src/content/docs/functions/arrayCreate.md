@@ -11,7 +11,7 @@ Creates a new array.
 | Elements  | Elements to form the array.          | Yes      | None          |
 | Separator | Element separator to split the text. | No       | ,             |
 ## Example
-```
+```eats
 $arrayCreate[name;elements;separator?]
 ```
 ## Function Aliases

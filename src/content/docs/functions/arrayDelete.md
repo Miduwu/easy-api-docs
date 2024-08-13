@@ -9,6 +9,6 @@ Deletes an array from the environment data.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $arrayDelete[name]
 ```

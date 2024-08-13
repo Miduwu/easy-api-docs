@@ -9,6 +9,6 @@ Returns the requested buffer left.
 |------|------------------------|----------|---------------|
 | Name | The name of the array. | Yes      | None          |
 ## Example
-```
+```eats
 $bufferLength[name]
 ```
