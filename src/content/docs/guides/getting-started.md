@@ -11,16 +11,19 @@ string-based interpreted languages, allows you to take all your
 ideas from mind to reality.
 
 ## Features
-- 📝 Easy to learn.
-- 📚 Constant updates.
-- 🔥 Image manipulation.
-- 🚀 Optimized and advanced codes and functions.
+
+-   📝 Easy to learn.
+-   📚 Constant updates.
+-   🔥 Image manipulation.
+-   🚀 Optimized and advanced codes and functions.
 
 ## Requirements
-- Basic understanding of [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript).
-- [Node.JS](https://nodejs.org/) installed on your machine.
+
+-   Basic understanding of [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript).
+-   [Node.JS](https://nodejs.org/) installed on your machine.
 
 ## Basic Setup
+
 ```js
 // ./index.js
 var { API } = require("easy-api.ts");
@@ -28,7 +31,7 @@ var { API } = require("easy-api.ts");
 
 var api = new API({
     dots: false, // Selects the available syntax styles, check "syntax" guide for further information.
-    reverse: false // Whether enable/disable reverse reading.
+    reverse: false, // Whether enable/disable reverse reading.
 });
 
 // Adding a simple "hello" route.
@@ -43,19 +46,15 @@ api.route({
                 "hello": "world"
             }]
         ]
-    `
+    `,
 });
 
 // Let the API connect using the given host address and port.
 api.connect({
     host: String,
-    port: Number
+    port: Number,
 });
 ```
-
-:::tip[Did you know?]
-easy-api.ts was the first string-based API library.
-:::
 
 :::note
 **easy-api.ts** is a wrapper of [Fastify](https://fastify.dev).
