@@ -1,5 +1,5 @@
 ---
-title: $addPackage
+title: $define
 description: Adds a require package to the $jsEval code.
 ---
 
@@ -11,7 +11,7 @@ Adds a require package to the $jsEval code.
 | Property     | Property to be required from the package. Use %default% to use the default CJS import: const package = require("package") | No       | %DEFAULT%     |
 ## Example
 ```eats
-$addPackage[requireName;property?]
+$define[requireName;property?]
 ```
 ## Function Aliases
-- $define
+- $addPackage

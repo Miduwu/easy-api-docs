@@ -50,6 +50,27 @@ To load your custom function, you can use the `load` method of the function mana
 var api = new API(...);
 
 api.functions.load("<path to function>");
+
+/*
+or using: API#addFunction
+
+// -> Adding an instance of the extended APIFunction class.
+class MyFunc extends APIFunction { ... }
+const fn = new MyFunc();
+api.addFunctions(fn);
+
+// -> Or add the uninstanced one.
+api.addFunctions(MyFunc);
+
+// -> Or add a raw object.
+api.addFunctions({
+    name: "$myFunc",
+    ...
+});
+
+// -> Or add multiple function at once.
+api.addFunctions(fn, MyFunc, {}, {}, ...);
+*/
 ```
 
 import { Badge } from '@astrojs/starlight/components';
@@ -212,6 +233,7 @@ $map[1,2,3,4,5,6;
 $map[1,2,3,4,5,6;
     $log[%element%;3]
 ]
+
 $load[res;$sum[%element%;3]]
 ^ ERROR: $load is not a function.
 ```
